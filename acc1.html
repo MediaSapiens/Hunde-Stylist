@@ -134,17 +134,43 @@
 
         <ul>
             <li><div class="lgbv">Basisdaten</div></li>
-            <li><span>E-Mail</span> <input type="text" value="email@mail.com"/></li>
-            <li><span>Vorname</span> <input type="text" value="Olga" disabled="disable"/></li>
-            <li><span>Nachname</span><input type="text" value="Ivolga"/></li>
-            <li><span>Passwort</span><input type="password" value="13245678"/></li>
-            <li><span>Telefon</span><input type="text" value="040 123 456 08"/></li>
-            <li><span>Was noch?</span> <input type="text" value="was noch...."/></li>    
-        
+            <li><span>E-Mail</span><input type="text" value="email@mail.com" class="pcmail"/></li>
+            <li><span>Vorname</span><input type="text" value="Olga" disabled="disable" class="pcvorn"/></li>
+            <li><span>Nachname</span><input type="text" value="Ivolga" class="pcnme"/></li>
+            <li><span>Passwort</span><input type="password" value="13245678" class="pcpss"/></li>
+            <li><span>Telefon</span><input type="text" value="040 123 456 08" class="pctlf"/></li>
+            <li><span>Was noch?</span><input type="text" value="was noch...." class="pcws"/></li>
         </ul>
-        <input type="checkbox" id="frau"/><label for="frau">Frau</label>
-        <input type="checkbox" id="mann"/><label for="mann">Mann</label>
-        <input type="checkbox" id="newsletter"/><label for="newsletter">Newsletter abonnieren</label>
+        <div class="adrdata">
+            <div class="wradr">
+                <h4>Ihre Standard-Rechnungsadresse</h4>
+                <ul>
+                    <li>Olga Ivolga</li>
+                    <li>Diedenhofer Str. 123</li>
+                    <li>21345 Hamburg-Harburg</li>
+                </ul>
+                <input type="submit" value="Standard-Rechnungsadresse bearbeiten »"/>
+            </div>
+              <div class="wradr">
+                <h4 style="background-position: -455px 0;">Ihre Standard-Lieferadresse</h4>
+                <ul>
+                    <li>Olga Ivolga</li>
+                    <li>Diedenhofer Str. 123</li>
+                    <li>21345 Hamburg-Harburg</li>
+                </ul>
+                <input type="submit" value="Standard-Liefersadresse bearbeiten »"/>
+            </div>
+        
+        </div>
+        <div class="chopt">
+            <p><input type="checkbox" id="frau" checked=""/><label for="frau">Frau</label></p>
+            <p><input type="checkbox" id="mann"/><label for="mann">Mann</label></p>
+            <p><input type="checkbox" id="newsletter" checked=""/><label for="newsletter">Newsletter abonnieren</label></p>
+        </div>
+        <div class="pshbtn">     
+            <input type="submit" value="Daten aktualisieren  »"/>
+            <input type="submit" value="zurück ohne zu speichern »" class="refdt"/>
+        </div>   
         </div>
 
     </div>

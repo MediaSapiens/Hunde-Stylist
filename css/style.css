@@ -263,15 +263,62 @@ h4 {font-size: 21px ; font-weight: bold;}
 .accdata input[type=text]{border: 1px solid #F87B00; width: 288px;height: 22px;margin: 7px 0 8px 0; background: transparent; color: #3B2314; padding-left: 10px;font-size: 14px;}
 .accdata input[type=password]{border: 1px solid #F87B00; width: 288px;height: 22px;margin: 7px 0 8px 0; background: transparent; color: #3B2314; padding-left: 10px;font-size: 14px;}
 .accdata input[disabled] {background-color: #FCCA99;}
+.accdata select {border: 1px solid #F87B00; width: 300px;height: 26px;margin: 7px 0 8px 0; background: transparent; color: #3B2314; padding: 3px 0 3px 10px;display: block;}
 
 .accdata label { margin: 7px 0 8px 0;padding-top: 7px;color: #8A5D3B; font-size: 14px;}
 .accdata table {font-size: 18px; color: #8A5D3B;}
 .accdata  .lgbv {padding:15px 0 0 90px;height: 50px;background:url(../img/sprite2.png) no-repeat 0 -1721px ;font-size: 18px;}
-.accdata ul {float: left;width: 400px;color: #8A5D3B; font-size: 14px;}
-.accdata ul li {float: left;width: 400px;}
+.accdata  .lgbvpas {padding:15px 0 0 170px;height: 50px;background:url(../img/sprite2.png) no-repeat 0 -1821px;font-size: 18px;}
+.accdata  .lgbvrec {padding:15px 0 0 190px;height: 50px;background:url(../img/sprite2.png) no-repeat 0 -1913px;font-size: 18px;}
+.accdata ul {float: left;width: 400px;color: #8A5D3B; font-size: 14px;margin-bottom: 35px;}
+.accdata ul li {float: left;}
 .accdata ul li span {width: 90px; display: block;float: left;margin-top: 10px;}
 
+.accdata input[type=submit]{background: #F87B00;border: none; margin-right: 45px; height: 24px; color: #fff;font-weight: bold;}
 
+.accdata input.pcmail{background:url('../img/sprite2.png') no-repeat -195px -633px;}
+.accdata input.pcvorn{background:url('../img/sprite2.png') no-repeat -185px -714px;}
+.accdata input.pcnme{background:url('../img/sprite2.png') no-repeat -183px -782px;}
+.accdata input.pcpss{background:url('../img/sprite2.png') no-repeat -182px -850px;}
+.accdata input.pctlf{background:url('../img/sprite2.png') no-repeat -185px -918px;}
+.accdata input.pcws{background:url('../img/sprite2.png') no-repeat  -183px -985px;}
+.accdata input.pcpssd{background:url('../img/sprite2.png') no-repeat -181px -1053px;}
+.accdata input.pcmaildlv{background:url('../img/sprite2.png') no-repeat -188px -1192px;}
+.accdata input.pcvorndlv{background:url('../img/sprite2.png') no-repeat -186px -1259px;}
+.accdata input.pcnmedlv{background:url('../img/sprite2.png') no-repeat -190px -1323px;}
+.accdata input.pcpssdlv{background:url('../img/sprite2.png') no-repeat -185px -1392px;}
+.accdata input.pctlfdlv{background:url('../img/sprite2.png') no-repeat -189px -1462px;}
+
+.chopt {width: 322px; margin-bottom: 35px;line-height: 3;margin-right: 22%;float: left;}
+.chopt input[type=checkbox]{float: left;margin-top: 15px;}
+.chopt label {width: 132px;display: block;float: left;margin: 0 0 0 10px;padding: 0;}
+.pshbtn {float: left;padding-right: 20%;}
+.pshbtndel {width: 100%;float: left;}
+input[type=submit].refdt{background-color: #C3996B;}
+.pshbtn input[type=submit]{background: #F87B00;border: none; margin-right: 45px; height: 24px; color: #fff;font-weight: bold;}
+.pshbtn input[type=submit].refdt{background-color: #C3996B;}
+.adrdata {float: right;width: 400px;}
+.adrdata h4 {padding-left: 100px; background: url('../img/sprite2.png') no-repeat 0 -1913px;font-size: 18px;color: #8A5D3B;height: 50px;font-weight: normal;}
+.adrdata ul li {color: #8A5D3B; font-size: 14px;width: 100%;}
+.adrdata ul {margin: 10px 0;}
+.adrdata input[type=submit]{background: #F87B00;border: none; margin-right: 45px; height: 24px; color: #fff;font-weight: bold;}
+.wradr {margin-top: 60px;}
+ul.chndpss  {width: 470px;}
+ul.chndpss  li span {width: 169px;}
+ul.chndpdel {width: 490px;}
+ul.chndpdel  li span {width: 189px;}
+ul.chndpdelm {margin-top: 35px;width: 490px;}
+ul.chndpdelm  li span {width: 189px;}
+
+.hlppss {float: right; width: 395px; margin: 0 25px 45px 0;}
+.wrhlp {margin-top: 20px;float: left;}
+.hlppss h4 {font-size: 18px; color: #8A5D3B;padding-left: 35px; background: url('../img/sprite2.png') no-repeat -455px -1124px;}
+.hlppss p{color: #8A5D3B; font-size: 14px;padding:20px 0;}
+.delivhbox {float: left;width: 100%;border-bottom: 1px solid #F87B00;padding-bottom: 25px;margin-top: 25px;}
+.choisdel {float: right;width: 380px;}
+.hdel {float: left;color: #8A5D3B;font-size: 18px;padding-right: 50px; background: url('../img/sprite2.png') no-repeat -220px -1522px;width: 209px;}
+.dldel {float: left; background: url('../img/sprite2.png') no-repeat -455px -1589px;width: 14px; height: 14px;margin:5px 0 0 65px;}
+.subdeld {float: left;margin-top:30px;}
 
 
 @media print {
