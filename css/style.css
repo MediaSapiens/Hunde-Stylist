@@ -79,35 +79,23 @@ h1, h2, h3, h4, h5, h6 { font-weight: bold; }
 a, a:active, a:visited { color: #607890; }
 a:hover { color: #036; }
 
-/*
-    // ========================================== \\
-   ||                                              ||
-   ||               Your styles !                  ||
-   ||                                              ||
-    \\ ========================================== //
-*/
-
 body{
     font-family:Helvetica, Helvetica Neue, Arial, sans-serif;
     background: #f8f7ec url(../img/top_bg.jpg) no-repeat center top;
     width: 100%;display: table;}
 .wrapper {margin:0 auto;width:1000px;position: relative;}
-.bot_bg {background:#f8f7ec url(../img/spriten.png) no-repeat center top ;width: 100%; height: 257px;float: left;margin-top: -40px;}
-
+.bot_bg {background:#f8f7ec url(../img/bot_bg.jpg) no-repeat ;width: 100%; height: 257px;float: left;margin-top: -40px;border-bottom: 20px solid #3b2314;}
 .loginbl {float: right; height: 25px;margin-right: 20px;width: 455px;}
 .login {width: 198px; height: 25px; background: #3B2314;border-right: 2px solid #603813;float: left;margin: 0;}
 .login a{color: #F69220;text-decoration: none; font-size: 12px; background: url(../img/sprite2.png) no-repeat  0 -136px;margin: 5px 0 0 11px;padding-left: 30px;display: block; }
-
 .visbcart {float: right;position: relative;z-index: 2;}
 #cart {width: 180px; height: 25px; background: #3B2314; float: left;}
 #cart a {color: #F69220;text-decoration: none; font-size: 12px; background: url(../img/sprite2.png) no-repeat  0 0;margin:4px 0 0 14px;padding-left: 41px;display: block;}
-
 .check {width:75px; height: 25px; background: #F87B00; float: left;}
 .check a{font-weight: bold; color: white;text-decoration: none; font-family: Calibri;display: block; margin: 5px 0 0 7px;}
 .fullorder{width: 255px;  background: #3B2314;float: left;position: relative;z-index: 2;}
 .fullorder .title {width: 100%;height: 25px; background: #F87B00;}
 .fullorder .title a{text-decoration: none; color: white;font-weight: bold;display: block; padding: 5px 0 0 15px;font-size: 12px; font-family: Calibri;}
-
 .prodcat {float: left;}
 .prodcat .name {color: #8A5D3B;float: left;margin:0 24px 0 12px ;width: 90px}
 .prodcat .pric {color: #8A5D3B;float: left;width: 50px}
@@ -117,13 +105,7 @@ body{
 .listprod .pric {width: 50px;float: left; color: #F69220;font-size: 14px;margin: 19px 0;}
 .listprod .amount {width: 70px;float: left;font-size: 14px;margin: 15px 0;margin-left: 8px;}
 .listprod .amount input{width:37px; height: 24px;border: none; background: #c49470;text-align: center; font-weight: bold;float: left; font-size: 12px; color: #3b2314; }
-
-
-
-
 a.cls {background: url(../img/sprite2.png) no-repeat 0 -200px; width: 8px ; height: 8px;display: block;float: left;margin: 8px 0 0 10px;}
-
-
 #header-container{margin-top: 35px;float: left;}
 .logo{width:350px ;height: 120px;margin-left: 36px;float: left; background:#fff url(../img/sprite.png) no-repeat 10px -1782px;position: relative;z-index: 1;}
 h1#title{color: #3B2314;font: 42px Arial;padding:25px 0 0 83px;float: left;}
@@ -133,6 +115,7 @@ h1#titlec{color: #F69220;font: 42px Arial;float: left;padding-top: 25px;}
 .search input[type=text]{border: 1px solid #C49470;width: 160px;color:#C49470;padding-left: 11px;margin-right: 17px;}
 .search input[type=submit]{border: none; background: #fff;cursor: pointer;color: #F69220;}
 .slieder {width: 980px;height: 300px; border: 10px solid #fff; border-bottom: none; background: #00ADEE;float: left;margin-top: -30px;}
+*+html .slieder{-margin-top:30px}
 h2 {font: 32px Calibri ;margin: 63px 0 0 35px;color: #fff;}
 h3 {font: 24px Calibri ;margin-left: 35px;color: #fff;}
 .nav {float: left;height:85px;width: 1000px;padding-top:5px;background: #FBB71B;
@@ -140,10 +123,9 @@ background: -o-linear-gradient(#fff, #FBB71B);
  background: -webkit-linear-gradient(#fff, #FBB71B);
  background: -moz-linear-gradient(100% 100% 90deg, #FBB71B, #fff);
  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#FBB71B');
-
 }
-.dogface {height: 68px;width: 60px;background: url(../img/sprite.png) -19px -2866px no-repeat;float: left;}
-.nav ul {float: left;margin-top: 51px;list-style: none;}
+.dogface {height: 68px;width: 60px;background: url(../img/sprite2.png) -1061px -875px no-repeat;float: left;}
+.nav ul {float: left;margin-top: 58px;list-style: none;}
 .nav ul li {float: left;margin: 0 2px;}
 .nav ul li a{color: #3B2314;font-size:15px ;text-decoration: none;display: block;padding: 5px 11px 5px 8px;}
 .nav ul li a.curent {background: #3B2314;color: #F69220;}
@@ -155,17 +137,16 @@ background: -o-linear-gradient(#fff, #FBB71B);
 .pagnmps span.curent {color: #3B2314;}
 .ansic {float: right;margin-right: 20px;}
 .ansic select {height: 16px; border: 1px solid #754C28; color: #754C28;font-size: 12px; font-family: Calibri;padding: 0;background: transparent;}
-
 /*begin menu blokc*/
-.halsbänder {background: url(../img/sprite.png) no-repeat -321px -2710px;width: 59px;height: 54px;margin: -54px 0 0 3px;}
-.regensachen{background: url(../img/sprite.png) no-repeat -278px -2709px;width: 40px;height: 54px;margin: -54px 0 0 25px;}
-.hundegeschirre{background: url(../img/sprite.png) no-repeat -47px -2712px;width: 56px;height: 52px;margin: -52px 0 0 25px;}
-.bekleidung{background: url(../img/sprite.png) no-repeat -113px -2709px;width: 59px;height: 54px;margin: -54px 0 0 12px;}
-.halstücher{background: url(../img/sprite.png) no-repeat -179px -2708px;width: 36px;height: 54px;margin: -54px 0 0 25px;}
-.hundebetten{background: url(../img/sprite.png) no-repeat -223px -2708px;width: 52px;height: 54px;margin: -54px 0 0 27px;}
-.transport {background: url(../img/sprite.png) no-repeat -2px -2710px;width: 38px;height: 54px;margin: -54px 0 0 19px;}
-/*end menu*/
+.halsbänder {background: url(../img/sprite2.png) no-repeat -1044px -226px;width: 59px;height: 48px;margin: -54px 0 0 3px;}
+.regensachen{background: url(../img/sprite2.png) no-repeat -1044px -321px;width: 40px;height: 48px;margin: -54px 0 0 25px;}
+.transport {background: url(../img/sprite2.png) no-repeat -1044px -415px;width: 55px;height: 48px;margin: -54px 0 0 19px;}
+.hundegeschirre{background: url(../img/sprite2.png) no-repeat -1044px -508px;width: 56px;height: 46px;margin: -52px 0 0 25px;}
+.bekleidung{background: url(../img/sprite2.png) no-repeat -1044px -600px;width: 59px;height: 48px;margin: -54px 0 0 12px;}
+.halstücher{background: url(../img/sprite2.png) no-repeat -1044px -693px;width: 36px;height: 48px;margin: -54px 0 0 25px;}
+.hundebetten{background: url(../img/sprite2.png) no-repeat -1044px -788px;width: 52px;height: 48px;margin: -54px 0 0 27px;}
 
+/*end menu*/
 /*select block*/
 .select {position: absolute;
 	background: url(../img/sprite.png) no-repeat -76px -2615px;
@@ -178,18 +159,13 @@ select.styled {background: #3B2314; color: #F69220;font-weight: bold;overflow: h
 /*content*/
 #content {margin: 10px 20px 0 5px;float: left;}
 .content {float: left; width: 960px; margin: 30px 20px 0 20px;}
-.product {float: left; width: 310px; height: 252px;margin:10px 15px 0 0; background:url(../img/sprite.png) -526px -1815px no-repeat;overflow: hidden; }
+.product {position: relative;float: left; width: 310px; height: 252px;margin:10px 15px 0 0; background:url(../img/sprite.png) -526px -1815px no-repeat;overflow: hidden; }
 .infopod {float: left; width: 310px; height: 10px;margin:0 15px 0 0; background:url(../img/sprite.png) -526px -2066px no-repeat; }
 .prod_wrap {float: left; width: 310px; height: 262px;margin: 10px 7px 0 8px;}
-/*o-repeat 244px -1996px*/
-
 .prev {float: left; width: 298px; height: 198px; border: 1px solid #C3996B;}
-
-.info {float:left; width: 300px;position: relative; background: #3B2314;}
+.info {float:left; width: 300px;position: relative; background: #3B2314;padding-bottom: 8px;}
 .info p{color: #C49470;font: 18px Calibri ;margin:5px 0 3px 11px; width:140px;float:left;}
-
 .price {padding-top: 3px;text-align:center;background: #F69220; float: right; width:127px ; height:30px ;margin: -6px -10px 0 0;}
-
 .price strong{color: #3B2314; font: 21px Calibri;}
 .price small{color: #3B2314; font: 14px Calibri;}
 #desitem{float: left; width: 100%;margin: 14px 0 18px 0 ;}
@@ -201,26 +177,29 @@ select.styled {background: #3B2314; color: #F69220;font-weight: bold;overflow: h
 .loginza a.like {background: url(../img/sprite2.png) 0 -392px no-repeat;padding-left: 21px;}
 .loginza a.mid {padding: 0 30px;}
 .conthd {float: left;}
-/*end content*/
 
-.footersc {float: left; width:100%; height:423px;background: #3B2314;}
+/*end content*/
+.footersc {float: left; width:100%; height:400px;padding-top:23px;background: #3B2314;border-top: 2px solid #c3996b;}
 hr {background: #C3996B;}
 nav.footsc {margin-left:22px ; }
 nav.footsc a{color: #F69220 !important; font-size: 14px; text-decoration: none;float: left;}
 i {width: 1px;height:12px ;background: #C49470;margin: 3px 10px 0 10px;float: left;}
-.contact{float: left; margin: 64px 0 0 22px; color: #C49470;}
+.contact{float: left; margin: 64px 0 0 22px; color: #C49470;background:url(../img/sprite2.png) no-repeat -377px -1653px;height: 262px;}
 h4 {font-size: 21px ; font-weight: bold;}
 .contact p{font: 14px Calibri;}
 .contact a{color: #F69220;text-decoration: none;}
 .cosial {float: left; width:255px ;margin: 80px 0 0 84px;}
 .cosial p{color: #C49470;font: 14px Calibri;margin-top: 11px;float: left;}
-.cosial a.fc {background: url(../img/sprite.png) no-repeat -7px -2589px;width: 13px;height: 27px;display: block;float: left;margin: 0 26px 0 24px;}
-.cosial a.tw {background: url(../img/sprite.png) no-repeat -8px -2621px;width: 20px;height: 26px;display: block;float: left;}
-.cosial a.rs {background: url(../img/sprite.png) no-repeat -13px -2652px;width: 26px;height: 27px;display: block;float: left;margin: 0 32px 0 24px;}
-
+.cosial a.fc {background: url(../img/sprite2.png) no-repeat -1044px 0;width: 13px;height: 27px;display: block;float: left;margin: 0 26px 0 24px;}
+.cosial a.tw {background: url(../img/sprite2.png) no-repeat -1044px -76px;width: 20px;height: 26px;display: block;float: left;}
+.cosial a.rs {background: url(../img/sprite2.png) no-repeat -1044px -151px;width: 26px;height: 27px;display: block;float: left;margin: 0 32px 0 24px;}
+nav.catlist{float: left;width: 125px;margin-top: 64px;}
+nav.catlist h3 {margin: 0; color: #C49470; font-size: 21px;font-weight: bold;}
+nav.catlist a{color: #F69220; font-size: 13px;text-decoration: none;line-height: 1.6;}
+footer.cprt {width: 100%; clear: both;text-align: center;}
+footer.cprt p{color: #C49470; font-size: 14px;padding-top: 8px;background: #603813;height: 26px;}
 
 /*chekout page*/
-
 .datanav{background: #3B2314; height: 34px; float: left; width: 100%;}
 .datanav ul {list-style: none;float: left;margin: 5px 0 0 0;}
 .datanav ul li {float: left;}
@@ -234,7 +213,7 @@ h4 {font-size: 21px ; font-weight: bold;}
 .lgnsa p{color: #3B2314;font-size: 14px;width: 100%;float: left; }
 .lgnsa span {color: #F87B00;}
 .lgnsa {float: left; width: 100%; border-bottom: 1px solid #F87B00;margin-top:20px ;padding-bottom: 20px;}
-.lgnsa h4{font-size: 36px; color: #603813; background: url(../img/sprite2.png) no-repeat 0 -730px;padding-left: 53px;}
+.lgnsa h4{width:350px;font-size: 36px; color: #603813; background: url(../img/sprite2.png) no-repeat 0 -730px;padding-left: 53px;}
 
 .lgnsa input{border: 1px solid #F87B00; width: 288px;height: 22px;margin: 7px 0 8px 0; background: transparent; color: #3B2314; padding-left: 10px;}
 .lgnsa label {float:left;margin: 7px 0 8px 0;padding-top: 7px;color: #8A5D3B; font-size: 14px;}
@@ -324,6 +303,13 @@ ul.chndpdelm  li span {width: 189px;}
 .dldel {float: left; background: url('../img/sprite2.png') no-repeat -455px -1589px;width: 14px; height: 14px;margin:5px 0 0 65px;}
 .subdeld {float: left;margin-top:30px;}
 
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    }
 
 @media print {
   * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important;

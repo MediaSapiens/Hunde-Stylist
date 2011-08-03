@@ -1,7 +1,7 @@
  $(document).ready(function(){
                 
 	$("#cart").click(function(){
-		$(".fullorder").slideToggle('1400');
+		$(".fullorder").slideToggle('slow');
 		$(this).toggleClass("active"); return false;
 	});
     $(".amount a.cls").click(function(){
