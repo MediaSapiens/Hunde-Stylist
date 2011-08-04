@@ -21,6 +21,7 @@
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/select.js"></script>
     <script type="text/javascript" src="js/myscript.js"></script>
+
 </head>
 <body>
 <div class="wrapper">
@@ -134,7 +135,11 @@
 
      
         <div class="delivhbox">
-           <ul class="chndpdel">
+            <div class="choisdel">
+                <div class="hdel">Standard-Rechnungsadresse</div>
+            </div>
+        <div class="wrphd">
+           <ul class="chndpdelm">
             <li><div class="lgbvrec">Basisdaten</div></li>
             <li><span>Rechnung an (Name, Vorname)</span><input type="text" value="email@mail.com" class="pcmaildlv"/></li>
             <li><span>Straße, Nummer</span><input type="text" value="Olga" disabled="disable" class="pcvorndlv"/></li>
@@ -147,9 +152,7 @@
                                     <option>Deutschland</option>
                                 </select></li>
         </ul>
-        <div class="choisdel">
-            <div class="hdel">Standard-Rechnungsadresse</div><div class="dldel"></div>
-        </div>
+       
         <div class="adrdata">
               <div class="wradr">
                 <h4 style="background-position: -455px 0;">Ihre Standard-Lieferadresse</h4>
@@ -162,13 +165,18 @@
             </div>
         
         </div>
-        <div class="pshbtn">     
-            <input type="submit" value="Änderungen speichern  »"/>
-            <input type="submit" value="zurück ohne zu speichern »" class="refdt"/>
-        </div>   
+                <div class="pshbtndel">     
+                    <input type="submit" value="Änderungen speichern  »"/>
+                    <input type="submit" value="zurück ohne zu speichern »" class="refdt"/>
+                </div>
+            </div>   
         </div>
         
          <div class="delivhbox">
+         <div class="choisdel">
+            <div class="hdel">Rechnungsadresse</div><div class="dldel"></div>
+        </div>
+        <div class="wrphd">
            <ul class="chndpdelm">
             <li></li>
             <li><span>Rechnung an (Name, Vorname)</span><input type="text" value="email@mail.com" class="pcmaildlv"/></li>
@@ -182,15 +190,14 @@
                                     <option>Deutschland</option>
                                 </select></li>
         </ul>
-        <div class="choisdel">
-            <div class="hdel">Rechnungsadresse</div><div class="dldel"></div>
-        </div>
+        
      
         <div class="pshbtndel">     
             <input type="submit" value="Änderungen speichern  »"/>
             <input type="submit" value="zurück ohne zu speichern »" class="refdt"/>
             <input type="submit" value="Speichern und als standard festlegen  » "/>
-        </div>   
+        </div> 
+          </div> 
         </div>
         
         <div class="subdeld">

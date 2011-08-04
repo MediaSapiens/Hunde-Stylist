@@ -1,36 +1,6 @@
-﻿/*
-
-CUSTOM FORM ELEMENTS
-
-Created by Ryan Fait
-www.ryanfait.com
-
-The only things you may need to change in this file are the following
-variables: checkboxHeight, radioHeight and selectWidth (lines 24, 25, 26)
-
-The numbers you set for checkboxHeight and radioHeight should be one quarter
-of the total height of the image want to use for checkboxes and radio
-buttons. Both images should contain the four stages of both inputs stacked
-on top of each other in this order: unchecked, unchecked-clicked, checked,
-checked-clicked.
-
-You may need to adjust your images a bit if there is a slight vertical
-movement during the different stages of the button activation.
-
-The value of selectWidth should be the width of your select list image.
-
-Visit http://ryanfait.com/ for more information.
-
-*/
-
-var checkboxHeight = "25";
+﻿var checkboxHeight = "25";
 var radioHeight = "27";
 var selectWidth = "152";
-
-
-/* No need to change anything after this */
-
-
 document.write('<style type="text/css">input.styled { display: none; } select.styled { position: relative; width: ' + selectWidth + 'px; opacity: 0; filter: alpha(opacity=0); z-index: 5; } .disabled { opacity: 0.5; filter: alpha(opacity=50); }</style>');
 
 var Custom = {
