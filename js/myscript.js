@@ -1,4 +1,24 @@
  $(document).ready(function(){
+    //page acc5 scroll to top
+        $('.totop').click(function(){ 
+                if($.browser.safari){
+                    bodyelem = $("body")
+                } else{
+                    if($.browser.opera){
+                        bodyelem = $("html")
+                    } else{
+                        bodyelem = $("html,body")
+                    }
+                }
+                bodyelem.animate({scrollTop: 600});
+                return false;
+            });
+        // acc5 page delete adres deliver
+        $(".delivdel").click(function(){
+                        $(this).parents('.adreparam').remove();
+                        return false;
+                    });
+
      //page acc3 script
         $('.delivhbox').children('.wrphd:first').css('display','block');
         $('.choisdel').children('.hdel:first').css('backgroundPosition','-807px -1051px');
@@ -6,7 +26,7 @@
             if($(this).parents().children('.wrphd:hidden').length)
               $(this).css({backgroundPosition: '-807px -1051px'});
            else
-              $(this).css({backgroundPosition: '-220px -1522px'});
+           $(this).css({backgroundPosition: '-220px -1522px'});
             $(this).parents().children('.wrphd').animate({'height': 'toggle'},'300');
                 });        
         $('.dldel').click(function(){
@@ -18,9 +38,9 @@
 		$(".fullorder").slideToggle('slow');
 		$(this).toggleClass("active"); return false;
 	});
+    //remove product from cart
     $(".amount a.cls").click(function(){
                         $(this).parents(".listprod").remove();
-                          
                         return false;
                     });
 
