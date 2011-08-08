@@ -353,10 +353,11 @@ input[type=submit].frpen{font-size: 15px;font-weight: bold;padding: 17px 5px 17p
 .applblock {float: left; width: 100%; margin-top:28px ;}
 .applblock input[type=submit].greacc {background: #C3996B;}
 .applblock .totop {float: right; color: #F87B00;font-weight: bold;font-size: 14px;margin-right: 67px; padding-right: 11px; background: url('../img/sprite2.png') no-repeat -975px -1901px;}
-
-
-
-
+/*pagination*/
+nav.pagenav {margin: 0 auto; width: 400px;margin-top: 180px;}
+nav.pagenav a{text-decoration: none;color: #F69220; font-size: 18px;margin: 0 3px;}
+nav.pagenav span {color: #3B2314;}
+nav.pagenav input[type=text]{border: 1px solid #C49470; height:14px;width:34px; background: transparent;margin: -5px 5px 0 9px; color: #F69220; text-align: center;}
 
 
 /*h4 icon position*/

@@ -44,21 +44,23 @@
                         return false;
                     });
 
-                $('.info').click(function(){
+                $('.ttl').click(function(){
                  
-                    if($(this).hasClass('now'))
+                    if($(this).parents('.info').hasClass('now'))
                     {
-                          $(this).animate({marginTop:0},800);                          
-                          $(this).removeClass('now');  
+                          $(this).parents('.info').animate({marginTop:0},800);                          
+                          $(this).parents('.info').removeClass('now');  
                     }
                     else 
                     {
-                         $(this).animate({marginTop:-117},800);              
-                        $(this).addClass('now')                       
+                         $(this).parents('.info').animate({marginTop:-117},800);              
+                        $(this).parents('.info').addClass('now')                       
                     }           
                  });
       });
-      //main script 
+      
+      
+//main script 
 var checkboxHeight = "25";
 var radioHeight = "27";
 var selectWidth = "152";
