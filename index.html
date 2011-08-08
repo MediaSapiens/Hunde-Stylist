@@ -16,21 +16,7 @@
 	<link rel="stylesheet" href="css/style.css?v=2">
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/myscript.js"></script>
-    <script type="text/javascript" src="js/mdr.js"></script>
-    <script>
-        $(document).ready(function() {
-        });
-        //remmove later from cart count
-        function proverka(input) { 
-        var value = input.value; 
-        var rep = /[-\.;":'/a-zA-Zа-яА-Я]/; 
-        if (rep.test(value)) { 
-            value = value.replace(rep, ''); 
-            input.value = value; 
-        } 
-    } 
-    </script>
-    
+    <script type="text/javascript" src="js/mdr.js"></script>    
 </head>
 <body>
 <div class="wrapper">
@@ -67,7 +53,7 @@
             </form><span></span>
         </div>
         <div class="visbcart">
-            <div id="cart"><span id="dot"></span><a href="#">12 Artikel</a></div>
+            <div id="cart"><a href="#"><span></span> Artikel</a></div>
             <div class="check"><a href="#">Check out</a></div>
         </div>
     </div>
@@ -394,7 +380,7 @@
             <a href="#">6</a>
             <a href="#">7</a>
             <a href="#">8</a>
-            <a href="#"><span>9</span></a>
+            <span>9</span>
             <a href="#">10</a>
             <a href="#">11</a>
             <a href="#">...</a>

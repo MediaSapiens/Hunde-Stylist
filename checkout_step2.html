@@ -20,6 +20,12 @@
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/select.js"></script>
     <script type="text/javascript" src="js/myscript.js"></script>
+    <script type="text/javascript">
+$(document).ready(function(){
+
+
+});
+</script>
 </head>
 <body>
 <div class="wrapper">
@@ -134,8 +140,8 @@
             <h4 style="background-position:0 -1122px;">Bezahlung</h4>
             <p>Bitte wählen Sie Ihre Zahlungsmethode aus:</p>
                     <form action="#" method="#">
-                        <input type="checkbox" checked=""/><label>Kreditkarte (Visa / Mastercard / American Express)</label>
-                        <input type="checkbox"/><label>Überweisung</label>
+                        <div class="stlchek"><input type="checkbox" /></div><label>Kreditkarte (Visa / Mastercard / American Express)</label>
+                         <div class="stlchek"><input type="checkbox"/></div><label>Überweisung</label>
                     </form>
     
             </div>
@@ -143,8 +149,8 @@
                 <h4 style="background-position: 0 -1212px;">Versand</h4>
                 <p>Bitte wählen Sie Ihre Versandmethode aus:</p>
                     <form action="#" method="#">
-                        <input type="checkbox" checked=""/><label>6,90 €  Standard Versand </label>
-                        <input type="checkbox"/><label>12,00 € Express Versand </label>
+                         <div class="stlchek"><input type="checkbox" checked="" /></div>
+                         <div class="stlchek"><input type="checkbox"/></div>
                     </form>
                 <p>Hinweis: Kostenloser Standard-Versand ab 40 € Bestellwert.</p>
             </div>

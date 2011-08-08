@@ -1,4 +1,21 @@
  $(document).ready(function(){
+    //style for chekbox
+    $('input[type=checkbox]').css('opacity','0');
+    $('input:checked').parents('.stlchek').css({backgroundPosition: ' -1044px -1545px'});
+    $('.stlchek').click(function(){
+        if($(this).children('input:checked').length)
+            {
+                $(this).css('backgroundPosition',' -1044px -1545px');
+              
+            }
+        else
+            {
+                $(this).css('backgroundPosition','-1044px -1477px');
+               
+            }
+    });
+    
+    
     //page acc5 scroll to top
         $('.totop').click(function(){ 
                 if($.browser.safari){
@@ -33,7 +50,7 @@
             $(this).parents('.delivhbox').remove();           
         });
      
-     //mainn page begin script         
+     //dropdown page begin script         
 	$("#cart").click(function(){
 		$(".fullorder").slideToggle('slow');
 		$(this).toggleClass("active"); return false;
@@ -58,6 +75,18 @@
                     }           
                  });
       });
+      //coutn all product in cart
+       $(function() {  
+            var sum=0; 
+            $('.monprod').each(function(){
+              sum = sum +parseInt($(this).val());
+              $('#cart span').html(sum);
+            })            
+            $('.monprod').change(function(){
+              sum = sum +parseInt($(this).val());
+              $('#cart span').html(sum);
+            })        
+            })
       
       
 //main script 
@@ -175,3 +204,12 @@ var Custom = {
 	}
 }
 window.onload = Custom.init;
+   //remmove later from cart count
+        function proverka(input) { 
+        var value = input.value; 
+        var rep = /[-\.;":'/a-zA-Zа-яА-Я]/; 
+        if (rep.test(value)) { 
+            value = value.replace(rep, ''); 
+            input.value = value; 
+        }
+        }
