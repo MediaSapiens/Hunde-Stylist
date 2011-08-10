@@ -111,10 +111,10 @@ header {float: left;margin-top: 35px;}
 h1#title{color: #3B2314;font: 42px Arial;padding:25px 0 0 83px;float: left;}
 h1#titlec{color: #F69220;font: 42px Arial;float: left;padding-top: 25px;}
 .logo p{color: #3B2314;width: 100%;float: left;margin-left: 83px;font-size: 20px;}
-.search{float: right;margin: 73px 20px 0 0;width: 249px;background: white;height: 21px;padding: 3px;position: relative;z-index: 1;}
+.search{float: right;width: 249px;background: white;height: 21px;padding: 3px;position:absolute;right: 20px; top: 133px;}
 .search input[type=text]{border: 1px solid #C49470;width: 160px;color:#C49470;padding-left: 11px;margin-right: 17px;}
 .search input[type=submit]{border: none; background: #fff;cursor: pointer;color: #F69220;}
-.slieder {width: 980px;height: 300px; border: 10px solid #fff; border-bottom: none; background: #00ADEE;float: left;margin-top: -10px;}
+.slieder {width: 980px;height: 300px; border: 10px solid #fff; border-bottom: none; background: #00ADEE;float: left;margin-top:90px;}
 .slieder h2 {font: 32px Calibri ;margin: 63px 0 0 35px;color: #fff;}
 .slieder h3 {font: 24px Calibri ;margin-left: 35px;color: #fff;}
 .nav {float: left;height:85px;width: 1000px;padding-top:5px;background: #FBB71B;
@@ -142,13 +142,13 @@ background: -o-linear-gradient(#fff, #FBB71B);
 
 /*drop down menu*/
 
-.nav ul{float: left;margin-top: 49px;list-style: none;display: inline;position: relative;}
+.nav ul{float: left;margin-top: 49px;list-style: none;display: inline;position: relative; z-index: 10;}
 .nav ul li {float: left;margin: 0 2px;white-space: nowrap;display: inline;}
 .nav ul li a{font-size:15px ;text-decoration: none;display: block;padding: 5px 11px 5px 8px;color: #3B2314;white-space: nowrap;}
 .nav ul li.curent a {background: #3B2314;color: #F69220; font-weight: bold;}
 .nav ul li.curent div{display: block !important;}
 .nav ul li.curent ul li a{font-weight: normal;}
-.nav ul li a:hover{background: #3B2314; color: #F69220;}
+.nav ul li:hover a{background: #3B2314; color: #F69220;}
 .nav ul li:hover ul.scmenu {display: block !important;}
 .nav ul li:hover div{display: block !important;}
 
@@ -161,7 +161,10 @@ background: -o-linear-gradient(#fff, #FBB71B);
 /*select block*/
 .select {position: absolute;background: url(../img/sprite2.png) no-repeat  -1044px -1061px;width: 152px;height: 20px;font-size: 15px;overflow: hidden;
 color: #F69220;padding: 1px 0 0 5px;font-weight: bold;}
+
+
 .selectbox {float: left;margin: 54px 40px 0 -35px;}
+
 select.styled {background: #3B2314; color: #F69220;overflow: hidden;font-weight:bold;height: 19px;font-size: 14px;}
 /*select end*/
 /*content*/
@@ -453,6 +456,38 @@ a.gesc{background-position: -455px -536px;}
 .samrpd ul{float: left; list-style: square;margin-left: 15px; line-height: 2;}
 .samrpd ul li a {text-decoration: none; font-size: 16px; color: #F69220;}
 .freebox {height: 438px; width: 100%;border:1px dashed #C3996B;float: left;margin: 26px 0 74px 0;}
+/*login page*/
+.loginwr{width: 100%;height: 100%;background: black;position:fixed; overflow:hidden;z-index: 33;top:0;left: 0;opacity:0.4; filter: alpha(opacity=50);-moz-opacity: 0.5;}
+.lgbox {position: absolute;width: 600px;background: #3B2314; z-index: 34;left: 50%;margin-left: -300px;top: 50%;margin-top: -200px;}
+.ttllg {float: left; width: 100%; border-bottom: 1px solid #F87B00;padding-bottom: 7px;}
+.ttllg h4{font-size: 18px; color: #8A5D3B; font-weight: normal;display: block; float: left; margin: 10px 0 0 20px;}
+.clslg {float: right; background:url(../img/sprite2.png) no-repeat -1633px -428px; width: 11px; height: 11px;margin: 15px 10px 0 0;}
+.clslgf {float: right; background:url(../img/sprite2.png) no-repeat -1633px -428px; width: 11px; height: 11px;margin: 15px 10px 0 0;}
+.dtdlg {float: left;width: 100%;border-bottom:1px solid #F87B00;}
+.dtrblock {float: left; width: 304px; border-right: 1px dashed #F87B00;padding-left: 16px;padding-bottom: 10px;}
+.dtrblock p {font-size:14px; color: #C3996B;float: left;margin-right: 17px;margin-top: 10px;}
+.dtrblock form {float: left;margin-bottom: 25px;}
+.dtrblock input[type=text] {font-size: 14px; color: #3B2314;margin-bottom: 13px; background: #C49470 url(../img/sprite2.png) no-repeat -1378px 5px; border: none;width: 250px;height: 24px;padding: 0 30px 0 5px;}
+.dtrblock input[type=password]{font-size: 14px; color: #3B2314;background: #C49470 url(../img/sprite2.png) no-repeat -1376px -62px; border: none;width: 250px;height: 24px;padding: 0 30px 0 5px;}
+.dtrblock input[type=checkbox] {float: left; margin-right: 8px;}
+.dtrblock input[type=submit] {float: left;border: none;background: #F87B00;color: white;font-size: 14px; font-weight: bold;height: 24px;margin-top: 25px;}
+.dtrblock a {float: left;color: #F87B00; text-decoration: none; font-size: 12px;margin: 0 5px;}
+.reklmblc {float: left; width: 278px;background: url(../img/xs99999993.png) no-repeat 98px 38px; height: 224px;}
+.reklmblc p {color: #8A5D3B;font-size: 14px;display: block; margin: 132px 0 0 47px;}
+.reklmblc a {color: #F87B00; text-decoration: none;font-size: 14px;font-weight: bold;margin-left: 47px;}
+.altrlg {float: left;width: 100%;}
+.altrlg p{color: #8A5D3B; font-size: 14px;display: block; margin: 20px 0 24px 83px;}
+.lgnz {float: left;margin-left: 50px; width: 100%;margin-bottom: 25px;}
+.lgnz a{ width: 106px; height: 26px;display: block;float: left;margin: 0 15px;}
+.lgnz a.twtr{background: url(../img/sprite2.png) no-repeat -1633px -200px;}
+.lgnz a.conn{background: url(../img/sprite2.png) no-repeat -1633px -276px;}
+.lgnz a.gogl{background: url(../img/sprite2.png) no-repeat -1633px -352px;}
+.frgpsd {float: left;width: 100%;border-bottom: 1px solid #F87B00;display: none;}
+.frgpsd h4{font-size: 18px; color: #8A5D3B; font-weight: normal;display: block; float: left; margin: 10px 0 0 20px;}
+.frgpsd p{color: #C3996B; font-size: 14px;float: left;padding:6px 0 18px 20px;width: 95%;}
+.frgpsd form {float: left;padding-bottom: 25px;}
+.frgpsd input[type=text] {float: left;margin-left: 20px;font-size: 14px; color: #3B2314; background: #C49470 url(../img/sprite2.png) no-repeat -1374px -129px; border: none;width: 250px;height: 24px;padding:0 5px 0 35px;}
+.frgpsd input[type=submit] {float: left;border: none;background: #F87B00;color: white;font-size: 14px; font-weight: bold;height: 24px;margin-left: 25px; float: left;}
 /*media*/
 @media print {
   * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important;
