@@ -106,16 +106,15 @@ body{
 .listprod .amount {width: 70px;float: left;font-size: 14px;margin: 15px 0;margin-left: 8px;}
 .listprod .amount input{width:37px; height: 24px;border: none; background: #c49470;text-align: center; font-weight: bold;float: left; font-size: 12px; color: #3b2314; }
 a.cls {background: url(../img/sprite2.png) no-repeat 0 -200px; width: 8px ; height: 8px;display: block;float: left;margin: 8px 0 0 10px;}
-#header-container{margin-top: 35px;float: left;}
-.logo{width:350px ;height: 120px;margin-left: 36px;float: left; background:white url('../img/sprite2.png') no-repeat -1026px -1168px;position: relative;z-index: 1;}
+header {float: left;margin-top: 35px;}
+.logo{width:350px ;height: 120px;left: 36px;top:65px;background:white url('../img/sprite2.png') no-repeat -1026px -1168px;position:absolute;}
 h1#title{color: #3B2314;font: 42px Arial;padding:25px 0 0 83px;float: left;}
 h1#titlec{color: #F69220;font: 42px Arial;float: left;padding-top: 25px;}
 .logo p{color: #3B2314;width: 100%;float: left;margin-left: 83px;font-size: 20px;}
 .search{float: right;margin: 73px 20px 0 0;width: 249px;background: white;height: 21px;padding: 3px;position: relative;z-index: 1;}
 .search input[type=text]{border: 1px solid #C49470;width: 160px;color:#C49470;padding-left: 11px;margin-right: 17px;}
 .search input[type=submit]{border: none; background: #fff;cursor: pointer;color: #F69220;}
-.slieder {width: 980px;height: 300px; border: 10px solid #fff; border-bottom: none; background: #00ADEE;float: left;margin-top: -30px;}
-*+html .slieder{-margin-top:30px}
+.slieder {width: 980px;height: 300px; border: 10px solid #fff; border-bottom: none; background: #00ADEE;float: left;margin-top: -10px;}
 .slieder h2 {font: 32px Calibri ;margin: 63px 0 0 35px;color: #fff;}
 .slieder h3 {font: 24px Calibri ;margin-left: 35px;color: #fff;}
 .nav {float: left;height:85px;width: 1000px;padding-top:5px;background: #FBB71B;
@@ -125,12 +124,7 @@ background: -o-linear-gradient(#fff, #FBB71B);
  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#FBB71B');
 }
 .dogface {height: 68px;width: 60px;background: url(../img/sprite2.png) -1059px -949px no-repeat;float: left;}
-.nav ul {float: left;margin-top: 58px;list-style: none;}
-.nav ul li {float: left;margin: 0 2px;}
-.nav ul li a{color: #3B2314;font-size:15px ;text-decoration: none;display: block;padding: 5px 11px 5px 8px;background: #3B2314;color: #F69220;}
-.nav ul li a.curent {background: #3B2314;color: #F69220; font-weight: bold;}
-.nav ul li a:hover{background: #3B2314; color: #F69220;}
-.nav ul li:hover div{display: block !important;}
+
 .pagpas {float: left;width: 1000px; height: 16px;}
 .pagnmps {float: left;margin-left: 29px;}
 .pagnmps span {color: #754C28;font-family: Calibri; font-size: 12px;}
@@ -138,13 +132,30 @@ background: -o-linear-gradient(#fff, #FBB71B);
 .ansic {float: right;margin-right: 20px;}
 .ansic select {height: 16px; border: 1px solid #754C28; color: #754C28;font-size: 12px; font-family: Calibri;padding: 0;background: transparent;}
 /*begin menu blokc*/
-.halsbänder {background: url(../img/sprite2.png) no-repeat -1044px -226px;width: 58px;height: 54px;margin: -62px 0 0 15px;}
-.regensachen{background: url(../img/sprite2.png) no-repeat -1044px -330px;width: 58px;height: 54px;margin: -62px 0 0 20px;}
-.transport {background: url(../img/sprite2.png) no-repeat -1044px -434px;width: 58px;height: 54px;margin: -62px 0 0 11px;}
-.hundegeschirre{background: url(../img/sprite2.png) no-repeat -1044px -538px;width: 58px;height: 54px;margin: -62px 0 0 25px;}
-.bekleidung{background: url(../img/sprite2.png) no-repeat -1044px -642px;width: 58px;height: 54px;margin: -62px 0 0 12px;}
-.halstücher{background: url(../img/sprite2.png) no-repeat -1044px -746px;width: 58px;height: 54px;margin: -62px 0 0 13px;}
-.hundebetten{background: url(../img/sprite2.png) no-repeat -1044px -850px;width: 58px;height: 54px;margin: -62px 0 0 20px;}
+.halsbänder {background: url(../img/sprite2.png) no-repeat -1044px -226px;width: 58px;height: 54px;margin: -54px 0 0 15px;display: none;}
+.regensachen{background: url(../img/sprite2.png) no-repeat -1044px -330px;width: 58px;height: 54px;margin: -54px 0 0 20px;display: none;}
+.transport {background: url(../img/sprite2.png) no-repeat -1044px -434px;width: 58px;height: 54px;margin: -54px 0 0 11px;display: none;}
+.hundegeschirre{background: url(../img/sprite2.png) no-repeat -1044px -538px;width: 58px;height: 54px;margin: -54px 0 0 25px;display: none;}
+.bekleidung{background: url(../img/sprite2.png) no-repeat -1044px -642px;width: 58px;height: 54px;margin: -54px 0 0 12px;display: none;}
+.halstücher{background: url(../img/sprite2.png) no-repeat -1044px -746px;width: 58px;height: 54px;margin: -54px 0 0 13px;display: none;}
+.hundebetten{background: url(../img/sprite2.png) no-repeat -1044px -850px;width: 58px;height: 54px;margin: -54px 0 0 20px;display: none;}
+
+/*drop down menu*/
+
+.nav ul{float: left;margin-top: 49px;list-style: none;display: inline;position: relative;}
+.nav ul li {float: left;margin: 0 2px;white-space: nowrap;display: inline;}
+.nav ul li a{font-size:15px ;text-decoration: none;display: block;padding: 5px 11px 5px 8px;color: #3B2314;white-space: nowrap;}
+.nav ul li.curent a {background: #3B2314;color: #F69220; font-weight: bold;}
+.nav ul li.curent div{display: block !important;}
+.nav ul li.curent ul li a{font-weight: normal;}
+.nav ul li a:hover{background: #3B2314; color: #F69220;}
+.nav ul li:hover ul.scmenu {display: block !important;}
+.nav ul li:hover div{display: block !important;}
+
+.nav ul li ul {position:absolute;display: none;margin: 0;z-index: 1;}
+.nav ul li ul li {margin: 0; float: none; white-space: nowrap;position: relative; z-index: 1;}
+.nav ul li ul li a:hover{background: #F69220; color: #3B2314;}
+.nav ul li ul li a{background: #3B2314;color:#F69220;}
 
 /*end menu*/
 /*select block*/
@@ -406,9 +417,10 @@ a.gesc{background-position: -455px -536px;}
 .nav_cat a.prevprod{float: left;color: #F4BE89;} 
 .nav_cat a.tocat{margin-left: 240px;} 
 .nav_cat a.nextprod{float: right;margin-right: 2px;} 
-.overprd {float: left; width: 100%;margin-top: 12px;}
-.slider {float: left;width: 400px;height: 452px;background: silver;}
-.prddescr{float: left;width: 529px; height: 385px; border: 1px dashed #C3996B;border-left: none; border-bottom:none;padding:14px 0 0 30px;}
+
+.sldwr {float: left;width: 400px;margin-top: 12px;}
+.slider{height: 452px;background: silver;width: 400px;float: left;}
+.prddescr{float: left;width: 528px;min-height: 385px; border: 1px dashed #C3996B;border-bottom:none;padding:14px 0 0 30px;margin-top: 12px;}
 .prddescr h2 {font-size: 36px; color: #603813;font-weight: normal;width: 320px;float: left;}
 .prclbl {float: right; width: 151px;height: 86px;background:url(../img/sprite2.png)  -900px -1585px no-repeat;margin-right: -16px;}
 .prclbl .cost{background: #3B2314;height: 60px;width: 145px;float: left;}
@@ -432,7 +444,7 @@ a.gesc{background-position: -455px -536px;}
 .prodtxt span {color: #F69220;}
 .prodtxt ul {list-style: square;width: 230px;float: left;margin-left: 15px;}
 .prodtxt ul  {color: #A87C4F; font-size: 14px;}
-.lckbloc {float: left; width: 100%;height: 50px;width: 559px;border:1px dashed #C3996B; border-left:none;}
+.lckbloc {float: right; width: 100%;height: 50px;width: 558px;border:1px dashed #C3996B;margin-bottom: 20px;}
 .lckbloc .wrlck {float:left;margin:12px 0 0 30px;}
 .lckbloc .wrlck span{display: block;margin: 5px 0 0 15px;float: left; color: #784E23;}
 .lckbloc .wrlck img{float: left;}

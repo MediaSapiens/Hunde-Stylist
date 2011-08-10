@@ -1,4 +1,19 @@
  $(document).ready(function(){
+    //index page drop-down menu 
+        $('.nav ul li').hover(
+        function() {
+            $(this).addClass("active");
+            $(this).find('ul').stop(true, true);
+            $(this).find('ul').slideDown();
+            
+        },
+        function() {
+            $(this).removeClass("active");
+            $(this).find('ul').slideUp('fast');
+            
+        }
+    );
+
     //style for chekbox
     $('input[type=checkbox]').css('opacity','0');
     $('input:checked').parents('.stlchek').css({backgroundPosition: ' -1044px -1545px'});
