@@ -1,4 +1,14 @@
  $(document).ready(function(){
+    //show char in login block
+    if($('#zeichen:checked').length)
+    {
+        $('#pass').removeAttr('type');
+        $('#pass').attr('type','text');
+    }
+    else
+    {
+        
+    }
     //login page script
     $('.clslg').click(function(){
        $('.loginwr,.lgbox').remove();
