@@ -116,8 +116,8 @@ h1#titlec{color: #F69220;font: 42px Arial;float: left;padding-top: 25px;}
 .search input[type=submit]{border: none; background: #fff;cursor: pointer;color: #F69220;}
 .slieder {width: 980px;height: 300px; border: 10px solid #fff; border-bottom: none; background: #00ADEE;float: left;margin-top: -30px;}
 *+html .slieder{-margin-top:30px}
-h2 {font: 32px Calibri ;margin: 63px 0 0 35px;color: #fff;}
-h3 {font: 24px Calibri ;margin-left: 35px;color: #fff;}
+.slieder h2 {font: 32px Calibri ;margin: 63px 0 0 35px;color: #fff;}
+.slieder h3 {font: 24px Calibri ;margin-left: 35px;color: #fff;}
 .nav {float: left;height:85px;width: 1000px;padding-top:5px;background: #FBB71B;
 background: -o-linear-gradient(#fff, #FBB71B);
  background: -webkit-linear-gradient(#fff, #FBB71B);
@@ -131,7 +131,7 @@ background: -o-linear-gradient(#fff, #FBB71B);
 .nav ul li a.curent {background: #3B2314;color: #F69220; font-weight: bold;}
 .nav ul li a:hover{background: #3B2314; color: #F69220;}
 .nav ul li:hover div{display: block !important;}
-.pagpas {float: left;width: 100%; height: 16px;}
+.pagpas {float: left;width: 1000px; height: 16px;}
 .pagnmps {float: left;margin-left: 29px;}
 .pagnmps span {color: #754C28;font-family: Calibri; font-size: 12px;}
 .pagnmps span.curent {color: #3B2314;}
@@ -148,7 +148,7 @@ background: -o-linear-gradient(#fff, #FBB71B);
 
 /*end menu*/
 /*select block*/
-.select {position: absolute;background: url(../img/sprite2.png) no-repeat -1044px -990px;width: 152px;height: 20px;font-size: 15px;overflow: hidden;
+.select {position: absolute;background: url(../img/sprite2.png) no-repeat  -1044px -1061px;width: 152px;height: 20px;font-size: 15px;overflow: hidden;
 color: #F69220;padding: 1px 0 0 5px;font-weight: bold;}
 .selectbox {float: left;margin: 54px 40px 0 -35px;}
 select.styled {background: #3B2314; color: #F69220;overflow: hidden;font-weight:bold;height: 19px;font-size: 14px;}
@@ -158,7 +158,7 @@ select.styled {background: #3B2314; color: #F69220;overflow: hidden;font-weight:
 .content {float: left; width: 960px; margin: 30px 20px 0 20px;min-height: 550px;}
 .product {position: relative;float: left; width: 310px; height: 252px;margin:10px 15px 0 0;overflow: hidden; }
 .infopod {float: left; width: 310px; height: 10px;margin:0 15px 0 0; background:url(../img/sprite2.png) -772px -1318px no-repeat; }
-.prod_wrap {float: left; width: 310px; height: 262px;margin: 10px 7px 0 8px;}
+.prod_wrap {float: left; width: 310px; height: 262px;margin: 10px 5px 0 5px;}
 .prev {float: left; width: 298px; height: 198px; border: 1px solid #C3996B;}
 .info {float:left; width: 300px;position: relative; background: #3B2314;padding-bottom: 8px;}
 .info p{color: #C49470;font: 18px Calibri ;margin:5px 0 3px 11px; width:140px;float:left;}
@@ -400,6 +400,47 @@ a.gesc{background-position: -455px -536px;}
 .stlchek {margin:0 10px;width: 16px; height:18px ; background: url(../img/sprite2.png) no-repeat -1044px -1477px; position:relative;float: left;cursor: pointer;}
 .active a {background-position:  0 -258px !important;}
 
+/*product page*/
+.nav_cat {float: left; width: 100%;}
+.nav_cat a {text-decoration: none; font-size:18px; color: #F69220;}
+.nav_cat a.prevprod{float: left;color: #F4BE89;} 
+.nav_cat a.tocat{margin-left: 240px;} 
+.nav_cat a.nextprod{float: right;margin-right: 2px;} 
+.overprd {float: left; width: 100%;margin-top: 12px;}
+.slider {float: left;width: 400px;height: 452px;background: silver;}
+.prddescr{float: left;width: 529px; height: 385px; border: 1px dashed #C3996B;border-left: none; border-bottom:none;padding:14px 0 0 30px;}
+.prddescr h2 {font-size: 36px; color: #603813;font-weight: normal;width: 320px;float: left;}
+.prclbl {float: right; width: 151px;height: 86px;background:url(../img/sprite2.png)  -900px -1585px no-repeat;margin-right: -16px;}
+.prclbl .cost{background: #3B2314;height: 60px;width: 145px;float: left;}
+.prclbl .cost strong {font-size: 24px; font-weight: normal; color: #F69220; font-family: Verdana;display:block;margin: 11px 0 0 18px;}
+.prclbl .cost p{font-size: 10px; font-family: Verdana; color: #C49470;display: block; margin-left: 11px;margin-top: 3px;}
+.prclbl .cost a {color:#F69220;}
+.prclbl .devl{float:left;background: #F69220; width: 145px;height: 26px;}
+.prclbl .devl a{font-family: Verdana; font-size: 11px; color: #3B2314;text-decoration: none; margin: 7px 0 0 16px; display: block;}
+.prdoption {float: left;width: 100%;margin-top: 19px;color: #754C28;font-size: 14px;}
+.prdoption dl{float: left;width: 100%;}
+.prdoption dl dt {float: left;width: 120px; height: 26px;margin-left: 11px;}
+.prdoption dl dt.dtblc {background: #E5DDC7;}
+.prdoption dl dt.dtblc .clrbloc {background: yellow;border: 2px solid white;width: 18px; height: 18px;margin: 2px 3px;float: left;}
+.prdoption dl dt.dtblc p{display: block;margin: 5px 0 0 10px;float: left;}
+.prdoption dl dt.dtblc input[type=text]{background: white; width: 48px; border: none;font-size: 14px;color: #754C28;text-align: center;height: 20px;margin-top: 2px;margin-right:2px; float: right;}
+.prdoption dl dt.dtblc select {margin: 2px 0 0 10px;height: 22px;border: none;width: 104px;background: #E5DDC7;color: #754C28;}
+.prdoption dl dt.hlpbock{background:url(../img/sprite2.png) no-repeat -990px -1645px;height: 34px;}
+.prdoption dl dt.hlpbock p{background: #603813; height: 22px; width:110px; color: #F69220;padding: 5px 0 0 10px;}
+.prodtxt {float: left;margin-top: 9px;line-height: 1.4;}
+.prodtxt p {font-size: 14px; color: #3B2314;margin: 13px 0;}
+.prodtxt span {color: #F69220;}
+.prodtxt ul {list-style: square;width: 230px;float: left;margin-left: 15px;}
+.prodtxt ul  {color: #A87C4F; font-size: 14px;}
+.lckbloc {float: left; width: 100%;height: 50px;width: 559px;border:1px dashed #C3996B; border-left:none;}
+.lckbloc .wrlck {float:left;margin:12px 0 0 30px;}
+.lckbloc .wrlck span{display: block;margin: 5px 0 0 15px;float: left; color: #784E23;}
+.lckbloc .wrlck img{float: left;}
+.samrpd {float: left; margin-top:15px; width: 400px;}
+.samrpd h2{font-size: 36px; color: #603813;font-weight: normal;float: left;}
+.samrpd ul{float: left; list-style: square;margin-left: 15px; line-height: 2;}
+.samrpd ul li a {text-decoration: none; font-size: 16px; color: #F69220;}
+.freebox {height: 438px; width: 100%;border:1px dashed #C3996B;float: left;margin: 26px 0 74px 0;}
 /*media*/
 @media print {
   * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important;
