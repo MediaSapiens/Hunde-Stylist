@@ -292,6 +292,12 @@ footer.cprt p{color: #C49470; font-size: 14px;padding-top: 8px;background: #6038
 .accdata input.pcpssdlv{background:url('../img/sprite2.png') no-repeat -185px -1392px;}
 .accdata input.pctlfdlv{background:url('../img/sprite2.png') no-repeat -189px -1462px;}
 
+.accdata ul.chndpdelreds input.pcmaildlv{background:url('../img/sprite2.png') no-repeat -40px -1192px}
+.accdata ul.chndpdelreds input.pcvorndlv{background:url('../img/sprite2.png') no-repeat -37px -1259px}
+.accdata ul.chndpdelreds input.pcnmedlv{background:url('../img/sprite2.png') no-repeat -40px -1323px;}
+.accdata ul.chndpdelreds input.pcpssdlv{background:url('../img/sprite2.png') no-repeat -38px -1392px;}
+.accdata ul.chndpdelreds input.pctlfdlv{background:url('../img/sprite2.png') no-repeat -40px -1462px;}
+
 .chopt {width: 322px; margin-bottom: 35px;line-height: 3;margin-right: 22%;float: left;}
 .chopt input[type=checkbox]{float: left;margin-top: 15px;}
 .chopt label {width: 132px;display: block;float: left;margin: 0 0 0 10px;padding: 0;}
@@ -315,6 +321,11 @@ ul.chndpdel  li span {width: 189px;}
 ul.chndpdelm {margin-top: 35px;width: 490px;}
 ul.chndpdelm  li span {width: 189px;}
 ul.chndpdelred {width: 490px; float: none;margin-top: 20px; display: none;}
+ul.chndpdelreds input[type=text]{width: 448px;}
+ul.chndpdelreds input[type=submit]{margin-right: 0;}
+ul.chndpdelreds input[type=submit].greacs{margin-right: 0;background:#C3996B;}
+ul.chndpdelreds select {width: 460px;}
+ul.chndpdelreds {width: 460px;display: none;}
 
 
 .hlppss {float: right; width: 395px; margin: 0 25px 45px 0;}
@@ -341,13 +352,14 @@ ul.chndpdelred {width: 490px; float: none;margin-top: 20px; display: none;}
 .adrdatas ul {margin: 10px 0;}
 .adrdatas input[type=submit]{background: #F87B00;border: none; margin-right: 45px; height: 24px; color: #fff;font-weight: bold;}
 .adrdatas input[type=submit].greacc {background: #C3996B;margin-top: 15px; width: 100%;}
+.adrdatas ul.chndpdelreds input[type=submit].greacs {background: #C3996B;margin-left:25px;}
 .adrdatass {margin-left: 120px;float: left; width: 380px;}
 .adrdatass input[type=submit].greacc {background: #C3996B;margin-top: 15px; width: 100%;}
 .adrdatass h4 {padding-left: 100px; background: url('../img/sprite2.png') no-repeat;font-size: 18px;color: #8A5D3B;height: 50px;font-weight: normal;}
 .adrdatass ul li {color: #8A5D3B; font-size: 14px;width: 100%;}
 .adrdatass ul {margin: 10px 0;}
 .adrdatass input[type=submit]{background: #F87B00;border: none; margin-right: 45px; height: 24px; color: #fff;font-weight: bold;}
-.seporpen {margin:15px 0;width: 100%; float: left;height: 84px; border-bottom:1px solid #F87B00;border-top: 1px solid #F87B00; background: url('../img/sprite2.png') no-repeat -1044px -1791px ; }
+.seporpen {margin:15px 0;width: 100%; float: left;height: 84px; border-bottom:1px solid #F87B00;border-top: 1px solid #F87B00; background: url(../img/sprite2.png) no-repeat -1044px -1361px; }
 input[type=submit].frpen{font-size: 15px;font-weight: bold;padding: 17px 5px 17px 5px;height: 50px;margin: 15px 0 0 80px;}
 .adresblock {float: left; width: 100%;}
 .adresblock  h4 {font-size: 36px;color: #8A5D3B;font-weight: normal; margin: 0;}
@@ -469,6 +481,7 @@ a.gesc{background-position: -455px -536px;}
 .dtrblock form {float: left;margin-bottom: 25px;}
 .dtrblock input[type=text] {font-size: 14px; color: #3B2314;margin-bottom: 13px; background: #C49470 url(../img/sprite2.png) no-repeat -1378px 5px; border: none;width: 250px;height: 24px;padding: 0 30px 0 5px;}
 .dtrblock input[type=password]{font-size: 14px; color: #3B2314;background: #C49470 url(../img/sprite2.png) no-repeat -1376px -62px; border: none;width: 250px;height: 24px;padding: 0 30px 0 5px;}
+.dtrblock input.pass-show {font-size: 14px; color: #3B2314;background: #C49470 url(../img/sprite2.png) no-repeat -1376px -62px; border: none;width: 250px;height: 24px;padding: 0 30px 0 5px;}
 .dtrblock input[type=checkbox] {float: left; margin-right: 8px;}
 .dtrblock input[type=submit] {float: left;border: none;background: #F87B00;color: white;font-size: 14px; font-weight: bold;height: 24px;margin-top: 25px;}
 .dtrblock a {float: left;color: #F87B00; text-decoration: none; font-size: 12px;margin: 0 5px;}
@@ -486,7 +499,7 @@ a.gesc{background-position: -455px -536px;}
 .frgpsd h4{font-size: 18px; color: #8A5D3B; font-weight: normal;display: block; float: left; margin: 10px 0 0 20px;}
 .frgpsd p{color: #C3996B; font-size: 14px;float: left;padding:6px 0 18px 20px;width: 95%;}
 .frgpsd form {float: left;padding-bottom: 25px;}
-.frgpsd input[type=text] {float: left;margin-left: 20px;font-size: 14px; color: #3B2314; background: #C49470 url(../img/sprite2.png) no-repeat -1374px -129px; border: none;width: 250px;height: 24px;padding:0 5px 0 35px;}
+.frgpsd input[type=text] {float: left;margin-left: 20px;font-size: 14px; color: #3B2314; background: #C49470 url(../img/sprite2.png) no-repeat -1374px -129px; border: none;width: 250px;height: 24px;padding:0 35px 0 5px;}
 .frgpsd input[type=submit] {float: left;border: none;background: #F87B00;color: white;font-size: 14px; font-weight: bold;height: 24px;margin-left: 25px; float: left;}
 /*reg block*/
 .dtrblockr {float: left; width: 304px;padding-left: 16px;padding-bottom: 25px;}

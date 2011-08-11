@@ -28,12 +28,12 @@
                 $(this).parents('.adreparam').children('.chndpdelred').animate({'height': 'toggle'},'300');
             });
             $('input[name=redstnd]').click(function(){
-                 if($('.chndpdelred:visible').length)
+                 if($('.chndpdelreds:visible').length)
                     $(this).parents('.wradr').children('.greacc').removeAttr('disabled');
                  else
                     $(this).parents('.wradr').children('.greacc').attr('disabled','disabled');
                     
-                $(this).parents('.wradr').children('.chndpdelred').animate({'height': 'toggle'},'300');
+                $(this).parents('.wradr').children('.chndpdelreds').animate({'height': 'toggle'},'300');
             });
 
 });
@@ -156,7 +156,7 @@
                     <li>21345 Hamburg-Harburg</li>
                 </ul>
                 <input type="submit" value="Ändern  »" name="redstnd"/>
-                    <ul class="chndpdelred">            
+                    <ul class="chndpdelreds">            
                     <li><input type="text" value="email@mail.com" class="pcmaildlv"/></li>
                     <li><input type="text" value="Olga" class="pcvorndlv"/></li>
                     <li><input type="text" value="Ivolga" class="pcnmedlv"/></li>
@@ -167,7 +167,8 @@
                                             <option>Deutschland</option>
                                             <option>Deutschland</option>
                                         </select></li>
-                    <input type="submit" value="Sparen"/>
+                    <input type="submit" value="Änderungen speichern  »"/>
+                    <input type="submit" value="zurück ohne zu speichern »" class="greacs" />
                     </ul> 
                 <input  type="submit" value="als Standard-Rechnungs- und Lieferadresse verwenden  »" class="greacc"/>
             </div>
@@ -183,18 +184,20 @@
                     <li>21345 Hamburg-Harburg</li>
                 </ul>
                 <input type="submit" value="Ändern  »" name="redstnd"/>
-                <ul class="chndpdelred">            
-                <li><input type="text" value="email@mail.com" class="pcmaildlv"/></li>
-                <li><input type="text" value="Olga" class="pcvorndlv"/></li>
-                <li><input type="text" value="Ivolga" class="pcnmedlv"/></li>
-                <li><input type="text" value="13245678" class="pcpssdlv"/></li>
-                <li><input type="text" value="040 123 456 08" class="pctlfdlv"/></li>
-                <li><select>
-                                        <option>Deutschland</option>
-                                        <option>Deutschland</option>
-                                        <option>Deutschland</option>
-                                    </select></li>
-                </ul> 
+                   <ul class="chndpdelreds">            
+                    <li><input type="text" value="email@mail.com" class="pcmaildlv"/></li>
+                    <li><input type="text" value="Olga" class="pcvorndlv"/></li>
+                    <li><input type="text" value="Ivolga" class="pcnmedlv"/></li>
+                    <li><input type="text" value="13245678" class="pcpssdlv"/></li>
+                    <li><input type="text" value="040 123 456 08" class="pctlfdlv"/></li>
+                    <li><select>
+                                            <option>Deutschland</option>
+                                            <option>Deutschland</option>
+                                            <option>Deutschland</option>
+                                        </select></li>
+                    <input type="submit" value="Änderungen speichern  »"/>
+                    <input type="submit" value="zurück ohne zu speichern »" class="greacs" />
+                    </ul>
                 <input  type="submit" value="als Standard-Rechnungs- und Lieferadresse verwenden  »" class="greacc"/>
             </div>
         

@@ -1,22 +1,28 @@
  $(document).ready(function(){
     //show char in login block
-    if($('#zeichen:checked').length)
-    {
-        $('#pass').removeAttr('type');
-        $('#pass').attr('type','text');
-    }
-    else
-    {
-        
-    }
-    //login page script
-    $('.clslg').click(function(){
-       $('.loginwr,.lgbox').remove();
-       return false; 
+    $('#check').change(function() {
+        var $pass = $('#pass');
+    
+        if (!$pass.next().is('.pass-show')) {
+            $('<input class="pass-show">').val($pass.val()).hide().insertAfter($pass);
+        }
+    
+        if ($(this).is(':checked')) {
+            $pass.hide().next().show();
+        }
+        else {
+            $pass.show().next().hide();
+        }
     });
+    //login page script
+    //$('.clslg').click(function(){
+       //$('.loginwr,.lgbox').remove();
+     ///  return false; 
+   // });
     //forogot password
     $('.frgt,.clslgf').click(function(){
         $('.frgpsd').animate({'height': 'toggle'},'300');
+        return false;
     });
     //delet "forogot pass" block
 
