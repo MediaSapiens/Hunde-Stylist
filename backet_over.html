@@ -17,6 +17,39 @@
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/myscript.js"></script>
     <script type="text/javascript" src="js/mdr.js"></script>
+    <script>
+      $(document).ready(function(){
+      $(function() {  
+         
+            var sum=0;
+            var prc=0;
+            var prd=0;
+            var coun=0;
+            $('.baskprd').each(function(){
+              sum = sum +parseInt($(this).val());
+              $('.makord span.ddt').html(sum);
+            }) 
+                       
+            $('.baskprd').change(function(){
+              sum = sum +parseInt($(this).val());
+              $('.makord span.ddt').html(sum);
+               prd=parseFloat($(this).parents('.wrbask').find('.tlprcc input').val().replace(/[,]+/g, '.'));
+               coun=parseInt($(this).parents('.wrbask').find('.tlprcc input').val());
+               prc = prc+prd*coun;
+               $('.total .tlprct').html(prc.toFixed(2));     
+            })
+              $('.wrbask').each(function(){
+               prd=parseFloat($(this).children('.tlprcc').children('input').val().replace(/[,]+/g, '.'));
+               coun=parseInt($(this).children('.tlcoun').children('input').val());
+               prc=prc+prd*coun;
+               $('.total .tlprct').html(prc.toFixed(2)); 
+            })
+            
+                    
+            })
+              });
+    
+    </script>
 </head>
 <body>
 <div class="wrapper">
@@ -123,32 +156,32 @@
             </div>
             <div class="wrbask">
                <div class="tlname">Produkt Name Bla Bla Lorem Ipsum Jept</div>
-               <div class="tlprcc">72,90</div>
-               <div class="tlcoun"><input type="text" maxlength="3" onkeyup="return proverka(this);" value="1"/></div>
+               <div class="tlprcc"><input type="text" value="72,90" readonly="readonly" /></div>
+               <div class="tlcoun"><input type="text" maxlength="3" class="baskprd" onkeyup="return proverka(this);" value="1"/></div>
                <div class="tldlt"><a href="#" class="cls"></a></div>
             </div>
             <div class="wrbask">
                <div class="tlname">Produkt Name Bla Bla Lorem Ipsum Jept  Produkt Name Bla Bla Lorem Ipsum Jept </div>
-               <div class="tlprcc">172,90</div>
-               <div class="tlcoun"><input type="text" maxlength="3" onkeyup="return proverka(this);" value="1"/></div>
+               <div class="tlprcc"><input type="text" value="172,90" readonly="readonly" /></div>
+               <div class="tlcoun"><input type="text" maxlength="3" class="baskprd" onkeyup="return proverka(this);" value="1"/></div>
                <div class="tldlt"><a href="#" class="cls"></a></div>
             </div>
             <div class="wrbask">   
                <div class="tlname">Bla Bla Lorem Ipsum Jept </div>
-               <div class="tlprcc">22,90</div>
-               <div class="tlcoun"><input type="text" maxlength="3" onkeyup="return proverka(this);" value="1"/></div>
+               <div class="tlprcc"><input type="text" value="22,90" readonly="readonly" /></div>
+               <div class="tlcoun"><input type="text" maxlength="3" class="baskprd" onkeyup="return proverka(this);" value="2"/></div>
                <div class="tldlt"><a href="#" class="cls"></a></div>
             </div>
             <div class="wrbask">
                <div class="tlname">Produkt Name Bla Bla Lorem Ipsum Jept und so weiter </div>
-               <div class="tlprcc">2,90</div>
-               <div class="tlcoun"><input type="text" maxlength="3" onkeyup="return proverka(this);" value="1"/></div>
+               <div class="tlprcc"><input type="text" value="2,90" readonly="readonly" /></div>
+               <div class="tlcoun"><input type="text" maxlength="3" class="baskprd" onkeyup="return proverka(this);" value="1"/></div>
                <div class="tldlt"><a href="#" class="cls"></a></div>
             </div>
             <div class="wrbask">
                <div class="tlname">Produkt Name Bla Bla Lorem Ipsum Jept </div>
-               <div class="tlprcc">12,90</div>
-               <div class="tlcoun"><input type="text" maxlength="3" onkeyup="return proverka(this);" value="1"/></div>
+               <div class="tlprcc"><input type="text" value="12,90" readonly="readonly" /></div>
+               <div class="tlcoun"><input type="text" maxlength="3" class="baskprd" onkeyup="return proverka(this);" value="1"/></div>
                <div class="tldlt"><a href="#" class="cls"></a></div>
             </div>
             <div class="shiping">
@@ -161,7 +194,7 @@
                 <div class="tlprct">248,90</div>   
             </div>
             <div class="makord">
-                <span>15 Artikel </span>
+                <span class="ddt">15</span><span>Artikel</span>
                 <input  type="submit" value="Check out" class="mko"/>
                 <input type="submit" value="Save / Reload" class="reload"/>                
             </div>

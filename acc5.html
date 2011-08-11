@@ -17,29 +17,7 @@
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/myscript.js"></script>
     <script type="text/javascript" src="js/mdr.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('input[name=redact]').click(function(){
-                  if($('.chndpdelred:visible').length)
-                    $(this).parents('.adreparam').children('input').removeAttr('disabled');
-                 else
-                    $(this).parents('.adreparam').children('input').attr('disabled','disabled');
-                               
-                $(this).parents('.adreparam').children('.chndpdelred').animate({'height': 'toggle'},'300');
-            });
-            $('input[name=redstnd]').click(function(){
-                 if($('.chndpdelreds:visible').length)
-                    $(this).parents('.wradr').children('.greacc').removeAttr('disabled');
-                 else
-                    $(this).parents('.wradr').children('.greacc').attr('disabled','disabled');
-                    
-                $(this).parents('.wradr').children('.chndpdelreds').animate({'height': 'toggle'},'300');
-            });
 
-});
-      
-
-    </script>
 </head>
 <body>
 <div class="wrapper">

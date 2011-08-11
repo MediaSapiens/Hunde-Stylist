@@ -406,6 +406,7 @@ a.gesc{background-position: -455px -536px;}
 .backet .tlname {width: 705px;float: left;padding-left: 10px;}
 .backet .tlprc {width: 110px;float: left;}
 .backet .tlprcc {width: 110px;float: left; color: #F69220;}
+.backet .tlprcc input{width: 50px;text-align: left;border: none;background: #3B2314;color: #F69220;}
 .backet .tlcoun {width: 85px;float: left;}
 .backet .tldlt {float: left;width: 48px;}
 .backet .tlcoun input{width:37px; height: 24px;border: none; background: #c49470;text-align: center; font-weight: bold;float: left; font-size: 12px; color: #3b2314; }
@@ -515,6 +516,12 @@ a.gesc{background-position: -455px -536px;}
 .dtrblockr input[type=text].mailr{background-position:  -1374px -485px;}
 .dtrblockr input[type=text].namr{background-position:  -1376px -553px;}
 .dtrblockr input[type=text].nachr{background-position:  -1373px -620px;}
+/*check bpx login page*/
+.chkl {float: left;margin-right: 8px;width: 12px; height: 12px; background: url(../img/sprite2.png) no-repeat -1633px -692px;margin-toP: 3px;}
+label.switl {float: left;margin: 16px 0 0 0; color: #C3996B; font-size: 14px;}
+label.switls {float: left;margin: 16px 0 0 17px; color: #C3996B; font-size: 14px;}
+label.swtrg{float: left;margin: 16px 0 0 0; color: #C3996B; font-size: 14px;}
+label.swtrgs{float: left;margin: 16px 0 0 0; color: #C3996B; font-size: 14px;width: 100%;}
 /*media*/
 @media print {
   * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important;

@@ -1,4 +1,74 @@
  $(document).ready(function(){
+    //login page checkbox
+    $('.chkl input[type=checkbox]').css('opacity','0');
+    $('input:checked').parents('.chkl').css({backgroundPosition: '-1633px -754px'});
+    $('.chkl').click(function(){
+        if($(this).children('input:checked').length)
+            {
+                $(this).css('backgroundPosition',' -1633px -754px');
+              
+            }
+        else
+            {
+                $(this).css('backgroundPosition','-1633px -692px');
+               
+            }
+    });
+    //backet over page
+    //dele product
+    $('.cls').click(function(){
+        $(this).parents('.wrbask').remove();
+        return false;
+    });
+    //count product bask
+/*
+           $(function() {  
+             var sum=0;
+             var prc=0;
+             var prd=0;
+             var coun=0;
+             $('.baskprd').each(function(){
+               sum = sum +parseInt($(this).val());
+               $('.makord span.ddt').html(sum);
+             }) 
+                        
+             $('.baskprd').change(function(){
+               sum = sum +parseInt($(this).val());
+               $('.makord span.ddt').html(sum);
+                prd=parseFloat($(this).parents('.wrbask').find('.tlprcc input').val().replace(/[,]+/g, '.'));
+                coun=parseInt($(this).parents('.wrbask').find('.tlprcc input').val());
+                prc = prc+prd*coun;
+                $('.total .tlprct').html(prc.toFixed(2));     
+             })
+               $('.wrbask').each(function(){
+                prd=parseFloat($(this).children('.tlprcc').children('input').val().replace(/[,]+/g, '.'));
+                coun=parseInt($(this).children('.tlcoun').children('input').val());
+                prc=prc+prd*coun;
+                $('.total .tlprct').html(prc.toFixed(2)); 
+             })
+             
+                     
+             })
+             
+ */
+    
+    //acc5 page show/hide form
+      $('input[name=redact]').click(function(){
+                  if($('.chndpdelred:visible').length)
+                    $(this).parents('.adreparam').children('input').removeAttr('disabled');
+                 else
+                    $(this).parents('.adreparam').children('input').attr('disabled','disabled');
+                               
+                $(this).parents('.adreparam').children('.chndpdelred').animate({'height': 'toggle'},'300');
+            });
+            $('input[name=redstnd]').click(function(){
+                 if($('.chndpdelreds:visible').length)
+                    $(this).parents('.wradr').children('.greacc').removeAttr('disabled');
+                 else
+                    $(this).parents('.wradr').children('.greacc').attr('disabled','disabled');
+                    
+                $(this).parents('.wradr').children('.chndpdelreds').animate({'height': 'toggle'},'300');
+            });
     //show char in login block
     $('#check').change(function() {
         var $pass = $('#pass');
@@ -250,7 +320,7 @@ window.onload = Custom.init;
    //remmove later from cart count
         function proverka(input) { 
         var value = input.value; 
-        var rep = /[-\.;":'/a-zA-Zа-яА-Я]/; 
+        var rep = /[-\.;":'/a-zA-Zа-яА-Я ]/; 
         if (rep.test(value)) { 
             value = value.replace(rep, ''); 
             input.value = value; 
