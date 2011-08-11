@@ -1,4 +1,40 @@
  $(document).ready(function(){
+    	$("a#fnc").fancybox({
+				'transitionIn'	: 'none',
+				'transitionOut'	: 'none'	
+			});
+
+    //slider script           
+            $('.thmsld:first').addClass('active');
+            var largePath = $('.active').children('a').attr("href");
+            $('.bigpick a').attr('href',largePath);            
+            $(".thmsld a").click(function(){
+        		var largePath = $(this).attr("href");        		
+        	    $("#largeImg").attr('src',largePath);
+                $('.slider').find('.active').removeClass('active');
+                $(this).parents('.thmsld').addClass('active');
+                 $('.bigpick a').attr('href',largePath);  
+                return false;
+        	});
+            $('.nextsld').click(function(){
+                $('.active').next('.thmsld').addClass('active');
+                $('.active').prev('.thmsld').removeClass('active');
+                var largePath = $('.active').children('a').attr("href");        		
+        	    $("#largeImg").attr('src',largePath);
+                 $('.bigpick a').attr('href',largePath);  
+            });
+         
+             $('.prvsld').click(function(){
+                          $('.active').prev('.thmsld').addClass('active');
+                          $('.active').next('.thmsld').removeClass('active');
+                          var largePath = $('.active').children('a').attr("href");        		
+                  	    $("#largeImg").attr('src',largePath);
+                         $('.bigpick a').attr('href',largePath);  
+                      });
+          
+                      
+
+            
     //login page checkbox
     $('.chkl input[type=checkbox]').css('opacity','0');
     $('input:checked').parents('.chkl').css({backgroundPosition: '-1633px -754px'});
@@ -21,36 +57,7 @@
         return false;
     });
     //count product bask
-/*
-           $(function() {  
-             var sum=0;
-             var prc=0;
-             var prd=0;
-             var coun=0;
-             $('.baskprd').each(function(){
-               sum = sum +parseInt($(this).val());
-               $('.makord span.ddt').html(sum);
-             }) 
-                        
-             $('.baskprd').change(function(){
-               sum = sum +parseInt($(this).val());
-               $('.makord span.ddt').html(sum);
-                prd=parseFloat($(this).parents('.wrbask').find('.tlprcc input').val().replace(/[,]+/g, '.'));
-                coun=parseInt($(this).parents('.wrbask').find('.tlprcc input').val());
-                prc = prc+prd*coun;
-                $('.total .tlprct').html(prc.toFixed(2));     
-             })
-               $('.wrbask').each(function(){
-                prd=parseFloat($(this).children('.tlprcc').children('input').val().replace(/[,]+/g, '.'));
-                coun=parseInt($(this).children('.tlcoun').children('input').val());
-                prc=prc+prd*coun;
-                $('.total .tlprct').html(prc.toFixed(2)); 
-             })
-             
-                     
-             })
-             
- */
+
     
     //acc5 page show/hide form
       $('input[name=redact]').click(function(){
