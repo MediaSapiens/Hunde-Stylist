@@ -1,9 +1,5 @@
  $(document).ready(function(){
-    	$("a#fnc").fancybox({
-				'transitionIn'	: 'none',
-				'transitionOut'	: 'none'	
-			});
-
+    	
     //slider script           
             $('.thmsld:first').addClass('active');
             var largePath = $('.active').children('a').attr("href");
@@ -51,6 +47,25 @@
             }
     });
     //backet over page
+        function calculate() {
+        var total = 0, sum = 0;
+        $('.baskprd').each(function(){
+            var price = $( this ).parent().prev().find("input").val().replace(/[,]+/g, '.');
+            count = $( this ).val();
+            sum += parseInt( count );
+            total += parseFloat( price ) * parseInt( count );
+        });
+        $('.makord span.ddt').html(sum);
+        $('.total .tlprct').html(total.toFixed(2));
+    }
+
+    $('.baskprd').change(function(){
+        calculate();
+    });
+
+    calculate();
+    
+  
     //dele product
     $('.cls').click(function(){
         $(this).parents('.wrbask').remove();
@@ -333,3 +348,9 @@ window.onload = Custom.init;
             input.value = value; 
         }
         }
+$(document).ready(function(){
+$("a#fnc").fancybox({
+				'transitionIn'	: 'none',
+				'transitionOut'	: 'none'	
+			});
+});
