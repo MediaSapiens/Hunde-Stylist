@@ -18,8 +18,10 @@
 	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 	<link rel="stylesheet" href="css/style.css?v=2">
     <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/select.js"></script>
+    <script type="text/javascript" src="js/mdr.js"></script> 
     <script type="text/javascript" src="js/myscript.js"></script>
+    <script type="text/javascript" src="js/select.js"></script>
+    <script src="js/fancybox.js"></script> 
 </head>
 <body>
 <div class="wrapper">
@@ -158,50 +160,53 @@
                         <li><span>Straße</span><input type="text" value="Diedenhofer Ring. 1"/></li>
                         <li><span>Stadt</span><input type="text" value="Hamburg-Harburg"/></li>
                         <li><span>Postleitzahl</span><input type="text" value="22039"/></li>
-                        <li><span>Land</span><select>
+                        <li><span>Land</span><div id="rdtcadd"><select class="selectBlock">
                                                     <option>Deutschland</option>
                                                     <option>Deutschland</option>
                                                     <option>Deutschland</option>
                                             </select>
+                                            </div>
                                                         </li>
                         <li><input type="submit" value="Adresse speichern »"/></li>                        
                     </ul>
 
                     <form action="#" method="#" class="dbadres">
                     <label>Adresse auswählen </label>
-                        <select>
+                        <div id="rdtcadd"><select class="selectBlock">
                             <option>Standard Adresse </option>
                             <option>Standard Adresse </option>
                             <option>Standard Adresse </option>
                         </select>
+                        </div>
                     </form>
                   </div>
                   <div class="lgnsa">
                     <h4 style="background-position: 0 -961px;">Lieferadresse</h4>
                     
                     <ul>
-                        <li><input type="checkbox" checked=""/><label>Lieferanschrift wie Rechnungsanschrift?</label></li>
+                        <li><label class="smplt"><div class="stlchek"><input type="checkbox" checked=""/></div>Lieferanschrift wie Rechnungsanschrift?</label></li>
                         <li><span>Rechnung an</span><input type="text" value="Name, Vorname"/></li>
                         <li><span>Firma</span><input type="text" value="-"/></li>
                         <li><span>Straße</span><input type="text" value="Diedenhofer Ring. 1"/></li>
                         <li><span>Stadt</span><input type="text" value="Hamburg-Harburg"/></li>
                         <li><span>Postleitzahl</span><input type="text" value="22039"/></li>
-                        <li><span>Land</span><select>
+                        <li><span>Land</span><div id="rdtcadd"><select class="selectBlock">
                                                     <option>Deutschland</option>
                                                     <option>Deutschland</option>
                                                     <option>Deutschland</option>
-                                            </select>
+                                            </select></div>
                                                         </li>
                         <li><input type="submit" value="Adresse speichern »"/></li>                        
                     </ul>
 
                     <form action="#" method="#" class="dbadres">
                     <label>Adresse auswählen </label>
-                        <select>
+                        <div id="rdtcadd"><select class="selectBlock">
                             <option>Standard Adresse </option>
                             <option>Standard Adresse </option>
                             <option>Standard Adresse </option>
                         </select>
+                        </div>
                     </form>
                     
                     

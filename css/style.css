@@ -156,8 +156,48 @@ background: -o-linear-gradient(#fff, #FBB71B);
 .nav ul li ul li a:hover{background: #F69220; color: #3B2314;}
 .nav ul li ul li a{background: #3B2314;color:#F69220;}
 /*end menu*/
-
+.smplt {margin-left: 80px !important; } 
+.acc2 {width: 100%;}
+.acc3 {margin: 20px 0 20px 80px;width: 100%;}
 /*select block*/
+    #rdtcadd {float: left;}
+    #rdtcadd .newListSelected{width:300px;margin:0 auto;margin-bottom: 10px;}
+	#rdtcadd .selectedTxt{width:288px;
+                        height:24px;
+                        padding:3px 0 0 12px;
+                        overflow:hidden;
+                        background:url(../img/sprite2.png) no-repeat -1633px -1032px;
+                        color:#3B2314;
+                        line-height:20px;
+                        font-size:14px;
+                        zoom:1;
+                        position:relative;
+                        z-index:1}
+	#rdtcadd .newList{list-style:none;
+                    padding:0;
+                    margin:0;
+                    width:300px;
+                    position:absolute;
+                    z-index:500;
+                    top:23px !important;
+                    border: 1px solid #F87B00;}
+	#rdtcadd .newList li{padding:0;margin:0;width: 300px;}
+	#rdtcadd .newList li a{display:block;
+                        background:#F8F7EC;
+                        font-size:14px;
+                        line-height:normal;
+                        outline:none;
+                        height:22px;
+                        overflow:hidden;
+                        padding: 4px 0 2px 12px ;}
+	#rdtcadd .newList li a:link,.newList li a:visited,.newList li a:hover{color:#3B2314;text-decoration:none;}
+
+
+
+
+
+
+
 
 	#sizer .newListSelected{width:120px;margin:0 auto;}
 	#sizer .selectedTxt{width:105px;
@@ -335,9 +375,8 @@ footer.cprt p{color: #C49470; font-size: 14px;padding-top: 8px;background: #6038
 .lgnsa h4{width:350px;font-size: 36px; color: #603813; background: url(../img/sprite2.png) no-repeat 0 -730px;padding-left: 53px;}
 
 .lgnsa input{border: 1px solid #F87B00; width: 288px;height: 22px;margin: 7px 0 8px 0; background: transparent; color: #3B2314; padding-left: 10px;}
-.lgnsa label {float:left;margin: 7px 0 8px 0;padding-top: 7px;color: #8A5D3B; font-size: 14px;}
+.lgnsa label {float:left;margin: 0 0 8px 0;padding-top: 7px;color: #8A5D3B; font-size: 14px;}
 .lgnsa input[type=submit]{background: #F87B00; height: 24px; color: white;font-weight: bold;width: 300px;float: right;}
-.lgnsa select {border: 1px solid #F87B00; width: 300px;height: 26px;margin: 7px 0 8px 0; background: transparent; color: #3B2314; padding: 3px 0 3px 10px;display: block;}
 .lgnsa input[type=checkbox]{float: none;width:16px;height:18px;margin:0;border: none;}
 .lgnsa table {margin: 30px 0 20px 0; color: #8A5D3B; font-size: 14px; line-height: 1.5;float: left;}
 .lgnsa form {float: left;margin: 20px 0 20px 0;}
@@ -561,7 +600,8 @@ a.gesc{background-position: -455px -536px;}
 .prclbl .cost p{font-size: 10px; font-family: Verdana; color: #C49470;display: block; margin-left: 11px;margin-top: 3px;}
 .prclbl .cost a {color:#F69220;}
 .prclbl .devl{float:left;background: #F69220; width: 145px;height: 26px;}
-.prclbl .devl a{font-family: Verdana; font-size: 11px; color: #3B2314;text-decoration: none; margin: 7px 0 0 16px; display: block;}
+
+.prclbl .devl input[type=submit]{background:transparent;font-family: Verdana; font-size: 11px; color: #3B2314;text-decoration: none; margin:5px 0 0 10px; display: block; border: none;}
 .prdoption {float: left;width: 100%;margin-top: 19px;color: #754C28;font-size: 14px;}
 .prdoption dl{float: left;width: 100%;}
 .prdoption dl dt {float: left;width: 120px; height: 26px;margin-left: 11px;}
