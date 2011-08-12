@@ -15,16 +15,17 @@
 	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 	<link rel="stylesheet" href="css/style.css?v=2">
     <link rel="stylesheet" href="css/mediaelementplayer.css" />
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/mdr.js"></script> 
-    <script type="text/javascript" src="js/myscript.js"></script>
-    <script type="text/javascript" src="js/select.js"></script>
-    <script src="js/fancybox.js"></script>  
+    <script src="js/jquery.js"></script>
+    <script src="js/mdr.js"></script> 
+    <script src="js/myscript.js"></script>
+    <script src="js/select.js"></script>
+    <script src="js/cloud-zoom.min.js"></script>
+    <script src="js/fancybox.js"></script> 
 </head>
 <body>
 <div class="wrapper">
 <div class="loginbl">
-            <div class="login"><a href="#">Anmelden / Registrieren</a></div>
+            <div class="login"><a href="login.html">Anmelden / Registrieren</a></div>
             <div class="fullorder" style="display: none;">
             <form method="#" action="#" id="couproduct">
                 <div class="title"><a href="#">Zum Einkaufskorb (full view) » </a></div>
@@ -36,22 +37,22 @@
                      <div class="listprod">
                     <div class="name">Produkt Name Name Zeile 2</div>
                     <div class="pric">72,90</div>
-                    <div class="amount"><input type="text" value="3" class="monprod" maxlength='3' onkeyup="return proverka(this);"/><a href="#" class="cls"></a></div>
+                    <div class="amount"><input type="text" value="3" class="monprod" maxlength='3' /><a href="#" class="cls"></a></div>
                 </div>
                      <div class="listprod">
                     <div class="name">Produkt Name Name Zeile 2</div>
                     <div class="pric">72,90</div>
-                    <div class="amount"><input type="text" value="3" class="monprod" maxlength='3' onkeyup="return proverka(this);"/><a href="#" class="cls"></a></div>
+                    <div class="amount"><input type="text" value="3" class="monprod" maxlength='3' /><a href="#" class="cls"></a></div>
                 </div>
                      <div class="listprod">
                     <div class="name">Produkt Name Name Zeile 2</div>
                     <div class="pric">72,90</div>
-                    <div class="amount"><input type="text" value="3" class="monprod" maxlength='3' onkeyup="return proverka(this);"/><a href="#" class="cls"></a></div>
+                    <div class="amount"><input type="text" value="3" class="monprod" maxlength='3'/><a href="#" class="cls"></a></div>
                 </div>
                 <div class="listprod">
                     <div class="name">Produkt Name Name Zeile 2</div>
                     <div class="pric">72,90</div>
-                    <div class="amount"><input type="text" value="3" class="monprod" maxlength='3' onkeyup="return proverka(this);"/><a href="#" class="cls"></a></div>
+                    <div class="amount"><input type="text" value="3" class="monprod" maxlength='3'/><a href="#" class="cls"></a></div>
                 </div>
             </form><span></span>
         </div>
@@ -61,12 +62,11 @@
         </div>
     </div>
 
- 	<div id="header-container">
     
 		<header>
 		  <div class="logo">
             <h1 id="title">Hunde</h1><h1 id="titlec">Stylist</h1>
-            <p>same img text</p>
+            <p>the finest dog's bountique</p>
           </div>
           <div class="search">
           <form action="">
@@ -83,30 +83,57 @@
             <div class="nav">
             <div class="dogface"></div>		
         <div class="selectbox">
-           <select name="d" class="styled">
+        <form id="style2">
+           <select name="d" class="selectBlock" >
               <option value="1">Unsere Services</option>
               <option value="2">Unsere Services</option>
               <option value="3">Unsere Services</option>
             </select>
+        </form>
             </div>
                 <ul>
-					<li><div class="halsbänder" ></div><a href="#">Halsbänder</a></li>
-					<li><div class="regensachen" ></div><a href="#">Regensachen</a></li>
-                    <li><div class="transport"></div><a href="#" class="curent">Transport</a></li>
-                    <li><div class="hundegeschirre" ></div><a href="#">Hundegeschirre</a></li>
-                    <li><div class="bekleidung" ></div><a href="#">Bekleidung</a></li>
-                    <li><div class="halstücher" ></div><a href="#">Halstücher</a></li>
-                    <li><div class="hundebetten" ></div><a href="#">Hundebetten</a></li>                                                               
-				</ul>
+                    <li class="hlsb">   
+                        <a href="#">Halsbander</a>
+                        <ul>
+                           <li><a href="#">Halsbander</a></li>
+                           <li><a href="#">Halsbander mit Leine</a></li>
+                           <li><a href="#">Halsbander ohne</a></li>
+                        </ul>
+                    </li>
+                    <li class="rgns">
+                        
+                        <a href="#">Regensachen</a>
+                      <ul>
+                           <li><a href="#">Halsbander</a></li>
+                           <li><a href="#">Halsbander mit Leine</a></li>
+                           <li><a href="#">Halsbander ohne</a></li>
+                        </ul>
+                    </li>
+                    <li class="trans">
+                        
+                        <a href="#">Transport</a>
+                         <ul>
+                           <li><a href="#">Halsbander</a></li>
+                           <li><a href="#">Halsbander mit Leine</a></li>
+                           <li><a href="#">Halsbander ohne</a></li>
+                        </ul>
+                    </li>
+                    <li class="hund"><a href="#">Hundegeschirre</a></li>
+                    <li class="bekl" ><a href="#">Bekleidung</a></li>
+                    <li class="hals"><a href="#">Halstucher</a></li>
+                    <li class="hund"><a href="#">Hundebetten</a></li>  
+                </ul>
+
          </div>
          <div class="pagpas">
             <div class="pagnmps">
               <span>Hunde Stylist  » </span><span class="curent">Transport</span>    
             </div>
             <div class="ansic">
-                <form action="#" method="#">
-                <label>Ansic</label>
-                <select>
+             <p>Ansic</p>
+                <form action="#" method="#" id="ansick">
+               
+                <select class="selectBlock">
                     <option>Neuestes Produkt zuerst</option>
                      <option>Neuestes Produkt zuerst</option>
                       <option>Neuestes Produkt zuerst</option>
@@ -116,7 +143,6 @@
             </div>
          </div>
 		</header>
-	</div>
     <div class="content">
         <div class="nav_cat">
             <a href="#" class="prevprod">« Vorheriges Produkt</a>
@@ -127,12 +153,12 @@
             <div class="sldwr">
             <div class="slider">
                 <div class="largeblck">
-                    <img  src="img/imgSlider/1.jpg" id="largeImg"/>
-                    <div class="bigpick"><a id="fnc" style="width: 31px; height: 31px; display: block;"></a></div>
+                    <a href="" class="cloud-zoom" id="zoom1" rel="position: 'inside' , showTitle: false, adjustX:-4, adjustY:-4"><img  src="" id="largeImg"/></a>
+                    <div class="bigpick"><a id="fncbox" style="width: 31px; height: 31px; display: block;" ></a></div>
                 </div>
                 <div class="prvsld"></div>
                 <div class="thmsld">
-                    <a href="img/imgSlider/1.jpg"><img src="img/imgSlider/1-th.jpg" /></a>
+                    <a href="img/imgSlider/1.jpg"><img src="img/imgSlider/1-th.jpg"/></a>
                 </div>
                 <div class="thmsld">
                     <a href="img/imgSlider/2.jpg"><img src="img/imgSlider/2-th.jpg" /></a>
@@ -181,10 +207,10 @@
                             <dt class="dtblc">
                                   <div id="sizer">
                                 <select class="selectBlock">
-                                    <option addTags="<div class='clrbloc'></div>">Gelb</option>
-                                    <option addTags="<div class='clrbloc'></div>">Gelb </option>
-                                    <option addTags="<div class='clrbloc'></div>">Gelb</option>
-                                    <option addTags="<div class='clrbloc'></div>">Gelb</option>
+                                    <option>Gelb</option>
+                                    <option>Gelb </option>
+                                    <option>Gelb</option>
+                                    <option>Gelb</option>
                                 </select>
                                 </div>
                             </dt>
@@ -223,9 +249,7 @@
              <div class="lckbloc">
                <div class="wrlck"><img src="img/fcl.png" alt="" title="" /><span>1024 Personen gefält das.</span></div>
              </div>
-        
 
-</script>
             <h3 class="lorean">Lorem ipsum dolor sit amet</h3>
           <div class="prod_wrap">
         <div class="product">

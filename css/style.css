@@ -132,25 +132,15 @@ background: -o-linear-gradient(#fff, #FBB71B);
 .ansic {float: right;margin-right: 20px;width: 210px;}
 .ansic  p{float: left;color: #754C28;font-size: 12px;}
 .ansic select {height: 16px; border: 1px solid #754C28; color: #754C28;font-size: 12px;padding: 0;background: transparent;}
-/*begin menu blokc*/
-.halsbänder {background: url(../img/sprite2.png) no-repeat -1044px -226px;width: 58px;height: 54px;margin: -54px 0 0 15px;display: none;}
-.regensachen{background: url(../img/sprite2.png) no-repeat -1044px -330px;width: 58px;height: 54px;margin: -54px 0 0 20px;display: none;}
-.transport {background: url(../img/sprite2.png) no-repeat -1044px -434px;width: 58px;height: 54px;margin: -54px 0 0 11px;display: none;}
-.hundegeschirre{background: url(../img/sprite2.png) no-repeat -1044px -538px;width: 58px;height: 54px;margin: -54px 0 0 25px;display: none;}
-.bekleidung{background: url(../img/sprite2.png) no-repeat -1044px -642px;width: 58px;height: 54px;margin: -54px 0 0 12px;display: none;}
-.halstücher{background: url(../img/sprite2.png) no-repeat -1044px -746px;width: 58px;height: 54px;margin: -54px 0 0 13px;display: none;}
-.hundebetten{background: url(../img/sprite2.png) no-repeat -1044px -850px;width: 58px;height: 54px;margin: -54px 0 0 20px;display: none;}
+
 
 /*drop down menu*/
-.nav ul{float: left;margin-top: 49px;list-style: none;display: inline;position: relative; z-index: 10;}
-.nav ul li {float: left;margin: 0 2px;white-space: nowrap;display: inline;}
+.nav ul{float: left;list-style: none;display:inline;position: relative; z-index: 10;}
+.nav ul li {float: left;margin: 0 2px;white-space: nowrap;padding-top: 54px;display: inline;}
 .nav ul li a{font-size:15px ;text-decoration: none;display: block;padding: 5px 11px 5px 8px;color: #3B2314;white-space: nowrap;}
 .nav ul li.curent a {background: #3B2314;color: #F69220; font-weight: bold;}
-.nav ul li.curent div{display: block !important;}
 .nav ul li.curent ul li a{font-weight: normal;}
 .nav ul li:hover a{background: #3B2314; color: #F69220;}
-.nav ul li:hover ul.scmenu {display: block !important;}
-.nav ul li:hover div{display: block !important;}
 .nav ul li ul {position:absolute;display: none;margin: 0;z-index: 1;}
 .nav ul li ul li {margin: 0; float: none; white-space: nowrap;position: relative; z-index: 1;}
 .nav ul li ul li a:hover{background: #F69220; color: #3B2314;}
@@ -314,6 +304,45 @@ background: -o-linear-gradient(#fff, #FBB71B);
 	#style2 .newList li a:link,.newList li a:visited,.newList li a:hover{color:#F69220;text-decoration:none;}
 
 /*select end*/
+
+/* This is the moving lens square underneath the mouse pointer. */
+.cloud-zoom-lens {
+	border: 4px solid #888;
+	margin:-4px;	/* Set this to minus the border thickness. */
+	background-color:#fff;	
+	cursor:move;		
+}
+
+/* This is for the title text. */
+.cloud-zoom-title {
+	font-family:Arial, Helvetica, sans-serif;
+	position:absolute !important;
+	background-color:#000;
+	color:#fff;
+	padding:3px;
+	width:100%;
+	text-align:center;	
+	font-weight:bold;
+	font-size:10px;
+	top:0px;
+}
+
+/* This is the zoom window. */
+.cloud-zoom-big {
+	border:4px solid #ccc;
+	overflow:hidden;
+}
+
+/* This is the loading message. */
+.cloud-zoom-loading {
+	color:white;	
+	background:#222;
+	padding:3px;
+	border:1px solid #000;
+}
+
+
+
 
 /*content*/
 #content {margin: 10px 20px 0 5px;float: left;}

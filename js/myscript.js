@@ -1,15 +1,26 @@
  $(document).ready(function(){
-    	$('.selectBlock').sSelect();
+           //remmove later from cart count
+         $(".monprod").keypress(function( b ){
+                var C = /[0-9\x25\x24\x23]/;
+                var a = b.which;
+                var c = String.fromCharCode(a);
+                return !!(a==0||a==8||a==9||a==13||c.match(C));
+            });
+        $('.selectBlock').sSelect();
     //slider script           
             $('.thmsld:first').addClass('active');
             var largePath = $('.active').children('a').attr("href");
-            $('.bigpick a').attr('href',largePath);            
+            $("#largeImg").attr('src',largePath);
+            $('.bigpick a').attr('href',largePath);
+            $('.largeblck a').attr('href',largePath);          
+            
             $(".thmsld a").click(function(){
-        		var largePath = $(this).attr("href");        		
-        	    $("#largeImg").attr('src',largePath);
-                $('.slider').find('.active').removeClass('active');
+        		$('.slider').find('.active').removeClass('active');
                 $(this).parents('.thmsld').addClass('active');
-                 $('.bigpick a').attr('href',largePath);  
+                var largePath = $('.active').children('a').attr("href");       		
+        	    $('#largeImg').attr('src',largePath);
+                $('.bigpick a').attr('href',largePath);
+                $('.largeblck a').attr('href',largePath);  
                 return false;
         	});
             $('.nextsld').click(function(){
@@ -17,15 +28,16 @@
                 $('.active').prev('.thmsld').removeClass('active');
                 var largePath = $('.active').children('a').attr("href");        		
         	    $("#largeImg").attr('src',largePath);
-                 $('.bigpick a').attr('href',largePath);  
-            });
-         
+                $('.bigpick a').attr('href',largePath);
+                $('.largeblck a').attr('href',largePath);  
+            });         
              $('.prvsld').click(function(){
                           $('.active').prev('.thmsld').addClass('active');
                           $('.active').next('.thmsld').removeClass('active');
                           var largePath = $('.active').children('a').attr("href");        		
-                  	    $("#largeImg").attr('src',largePath);
-                         $('.bigpick a').attr('href',largePath);  
+                  	      $("#largeImg").attr('src',largePath);
+                          $('.bigpick a').attr('href',largePath);
+                          $('.largeblck a').attr('href',largePath);  
                       });
    
                            
@@ -63,9 +75,7 @@
         calculate();
     });
 
-    calculate();
-    
-  
+    calculate();  
     //dele product
     $('.cls').click(function(){
         $(this).parents('.wrbask').remove();
@@ -112,10 +122,7 @@
         }
     });
     //login page script
-    //$('.clslg').click(function(){
-       //$('.loginwr,.lgbox').remove();
-     ///  return false; 
-   // });
+
     //forogot password
     $('.frgt,.clslgf').click(function(){
         $('.frgpsd').animate({'height': 'toggle'},'300');
@@ -127,7 +134,7 @@
     //index page drop-down menu 
         $('.nav ul li').hover(
         function() {
-            $(this).addClass("active");
+            $(this).addClass("active");          
             $(this).find('ul').stop(true, true);
             $(this).find('ul').slideDown();
             
@@ -138,6 +145,50 @@
             
         }
     );
+    $('.nav ul li.hlsb').mouseenter(function(){
+        $(this).css('background','url(img/sprite2.png) -1033px -226px');
+        
+    }).mouseleave(function (){
+        $(this).css('background','none');
+    });
+    $('.nav ul li.rgns').mouseenter(function(){
+        $(this).css('background','url(img/sprite2.png) -1025px -330px');
+        
+    }).mouseleave(function (){
+        $(this).css('background','none');
+    });
+    $('.nav ul li.trans').mouseenter(function(){
+        $(this).css('background','url(img/sprite2.png) -1034px -434px');
+        
+    }).mouseleave(function (){
+        $(this).css('background','none');
+    });
+    $('.nav ul li.hund').mouseenter(function(){
+        $(this).css('background','url(img/sprite2.png) -1018px -538px');
+        
+    }).mouseleave(function (){
+        $(this).css('background','none');
+    });
+    $('.nav ul li.bekl').mouseenter(function(){
+        $(this).css('background','url(img/sprite2.png) -1029px -642px');
+        
+    }).mouseleave(function (){
+        $(this).css('background','none');
+    });
+    $('.nav ul li.hals').mouseenter(function(){
+        $(this).css('background','url(img/sprite2.png) -1031px -746px');
+        
+    }).mouseleave(function (){
+        $(this).css('background','none');
+    });
+      $('.nav ul li.hund').mouseenter(function(){
+        $(this).css('background','url(img/sprite2.png) -1025px -850px');
+        
+    }).mouseleave(function (){
+        $(this).css('background','none');
+    });
+    
+    
 
     //style for chekbox
     $('.stlchek input[type=checkbox]').css('opacity','0');
@@ -214,148 +265,26 @@
                         $(this).parents('.info').addClass('now')                       
                     }           
                  });
-      });
-      //coutn all product in cart
-       $(function() {  
+                 $(function() {  
             var sum=0; 
             $('.monprod').each(function(){
               sum = sum +parseInt($(this).val());
               $('#cart span').html(sum);
             })            
-            $('.monprod').change(function(){
-              sum = sum +parseInt($(this).val());
+            $('.monprod').change(function(){             
+              sum = sum +parseInt($(this).val());              
               $('#cart span').html(sum);
             })        
             })
-      
-      
-//main script 
-var checkboxHeight = "25";
-var radioHeight = "27";
-var selectWidth = "152";
-document.write('<style type="text/css">input.styled { display: none; } select.styled { position: relative; width: ' + selectWidth + 'px; opacity: 0; filter: alpha(opacity=0); z-index: 5; } .disabled { opacity: 0.5; filter: alpha(opacity=50); }</style>');
-
-var Custom = {
-	init: function() {
-		var inputs = document.getElementsByTagName("input"), span = Array(), textnode, option, active;
-		for(a = 0; a < inputs.length; a++) {
-			if((inputs[a].type == "checkbox" || inputs[a].type == "radio") && inputs[a].className == "styled") {
-				span[a] = document.createElement("span");
-				span[a].className = inputs[a].type;
-
-				if(inputs[a].checked == true) {
-					if(inputs[a].type == "checkbox") {
-						position = "0 -" + (checkboxHeight*2) + "px";
-						span[a].style.backgroundPosition = position;
-					} else {
-						position = "0 -" + (radioHeight*2) + "px";
-						span[a].style.backgroundPosition = position;
-					}
-				}
-				inputs[a].parentNode.insertBefore(span[a], inputs[a]);
-				inputs[a].onchange = Custom.clear;
-				if(!inputs[a].getAttribute("disabled")) {
-					span[a].onmousedown = Custom.pushed;
-					span[a].onmouseup = Custom.check;
-				} else {
-					span[a].className = span[a].className += " disabled";
-				}
-			}
-		}
-		inputs = document.getElementsByTagName("select");
-		for(a = 0; a < inputs.length; a++) {
-			if(inputs[a].className == "styled") {
-				option = inputs[a].getElementsByTagName("option");
-				active = option[0].childNodes[0].nodeValue;
-				textnode = document.createTextNode(active);
-				for(b = 0; b < option.length; b++) {
-					if(option[b].selected == true) {
-						textnode = document.createTextNode(option[b].childNodes[0].nodeValue);
-					}
-				}
-				span[a] = document.createElement("span");
-				span[a].className = "select";
-				span[a].id = "select" + inputs[a].name;
-				span[a].appendChild(textnode);
-				inputs[a].parentNode.insertBefore(span[a], inputs[a]);
-				if(!inputs[a].getAttribute("disabled")) {
-					inputs[a].onchange = Custom.choose;
-				} else {
-					inputs[a].previousSibling.className = inputs[a].previousSibling.className += " disabled";
-				}
-			}
-		}
-		document.onmouseup = Custom.clear;
-	},
-	pushed: function() {
-		element = this.nextSibling;
-		if(element.checked == true && element.type == "checkbox") {
-			this.style.backgroundPosition = "0 -" + checkboxHeight*3 + "px";
-		} else if(element.checked == true && element.type == "radio") {
-			this.style.backgroundPosition = "0 -" + radioHeight*3 + "px";
-		} else if(element.checked != true && element.type == "checkbox") {
-			this.style.backgroundPosition = "0 -" + checkboxHeight + "px";
-		} else {
-			this.style.backgroundPosition = "0 -" + radioHeight + "px";
-		}
-	},
-	check: function() {
-		element = this.nextSibling;
-		if(element.checked == true && element.type == "checkbox") {
-			this.style.backgroundPosition = "0 0";
-			element.checked = false;
-		} else {
-			if(element.type == "checkbox") {
-				this.style.backgroundPosition = "0 -" + checkboxHeight*2 + "px";
-			} else {
-				this.style.backgroundPosition = "0 -" + radioHeight*2 + "px";
-				group = this.nextSibling.name;
-				inputs = document.getElementsByTagName("input");
-				for(a = 0; a < inputs.length; a++) {
-					if(inputs[a].name == group && inputs[a] != this.nextSibling) {
-						inputs[a].previousSibling.style.backgroundPosition = "0 0";
-					}
-				}
-			}
-			element.checked = true;
-		}
-	},
-	clear: function() {
-		inputs = document.getElementsByTagName("input");
-		for(var b = 0; b < inputs.length; b++) {
-			if(inputs[b].type == "checkbox" && inputs[b].checked == true && inputs[b].className == "styled") {
-				inputs[b].previousSibling.style.backgroundPosition = "0 -" + checkboxHeight*2 + "px";
-			} else if(inputs[b].type == "checkbox" && inputs[b].className == "styled") {
-				inputs[b].previousSibling.style.backgroundPosition = "0 0";
-			} else if(inputs[b].type == "radio" && inputs[b].checked == true && inputs[b].className == "styled") {
-				inputs[b].previousSibling.style.backgroundPosition = "0 -" + radioHeight*2 + "px";
-			} else if(inputs[b].type == "radio" && inputs[b].className == "styled") {
-				inputs[b].previousSibling.style.backgroundPosition = "0 0";
-			}
-		}
-	},
-	choose: function() {
-		option = this.getElementsByTagName("option");
-		for(d = 0; d < option.length; d++) {
-			if(option[d].selected == true) {
-				document.getElementById("select" + this.name).childNodes[0].nodeValue = option[d].childNodes[0].nodeValue;
-			}
-		}
-	}
-}
-window.onload = Custom.init;
-   //remmove later from cart count
-        function proverka(input) { 
-        var value = input.value; 
-        var rep = /[-\.;":'/a-zA-Zа-яА-Я ]/; 
-        if (rep.test(value)) { 
-            value = value.replace(rep, ''); 
-            input.value = value; 
-        }
-        }
-$(document).ready(function(){
-$("a#fnc").fancybox({
+            $("a#fncbox").fancybox({
 				'transitionIn'	: 'none',
 				'transitionOut'	: 'none'	
 			});
-});
+      });
+      //coutn all product in cart
+
+
+       
+         
+
+
