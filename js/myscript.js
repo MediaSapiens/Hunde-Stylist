@@ -27,8 +27,8 @@
                   	    $("#largeImg").attr('src',largePath);
                          $('.bigpick a').attr('href',largePath);  
                       });
-          
-                      
+   
+                           
 
             
     //login page checkbox
@@ -91,6 +91,11 @@
                     
                 $(this).parents('.wradr').children('.chndpdelreds').animate({'height': 'toggle'},'300');
             });
+            
+      $('.frpen').click(function(){
+            $(this).parents('.seporpen').children('ul').animate({'height': 'toggle'},'300');
+            return false;
+      });
     //show char in login block
     $('#check').change(function() {
         var $pass = $('#pass');
