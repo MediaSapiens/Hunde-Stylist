@@ -15,8 +15,12 @@
 	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 	<link rel="stylesheet" href="css/style.css?v=2">
     <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/mdr.js"></script> 
     <script type="text/javascript" src="js/myscript.js"></script>
-    <script type="text/javascript" src="js/mdr.js"></script>   
+    <script type="text/javascript" src="js/select.js"></script>
+    <script src="js/fancybox.js"></script> 
+
+
 </head>
 <body>
 <div class="wrapper">
@@ -79,11 +83,13 @@
             <div class="nav">
             <div class="dogface"></div>		
         <div class="selectbox">
-           <select name="d" class="styled">
+        <form id="style2">
+           <select name="d" class="selectBlock" >
               <option value="1">Unsere Services</option>
               <option value="2">Unsere Services</option>
               <option value="3">Unsere Services</option>
             </select>
+        </form>
             </div>
                 <ul>
                     <li class="curent">
@@ -125,9 +131,10 @@
               <span>Hunde Stylist  » </span><span class="curent">Transport</span>    
             </div>
             <div class="ansic">
-                <form action="#" method="#">
-                <label>Ansic</label>
-                <select>
+             <p>Ansic</p>
+                <form action="#" method="#" id="ansick">
+               
+                <select class="selectBlock">
                     <option>Neuestes Produkt zuerst</option>
                      <option>Neuestes Produkt zuerst</option>
                       <option>Neuestes Produkt zuerst</option>

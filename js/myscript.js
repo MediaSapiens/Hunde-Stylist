@@ -1,5 +1,5 @@
  $(document).ready(function(){
-    	
+    	$('.selectBlock').sSelect();
     //slider script           
             $('.thmsld:first').addClass('active');
             var largePath = $('.active').children('a').attr("href");

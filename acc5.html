@@ -15,8 +15,10 @@
 	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 	<link rel="stylesheet" href="css/style.css?v=2">
     <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/mdr.js"></script> 
     <script type="text/javascript" src="js/myscript.js"></script>
-    <script type="text/javascript" src="js/mdr.js"></script>
+    <script type="text/javascript" src="js/select.js"></script>
+    <script src="js/fancybox.js"></script> 
 
 </head>
 <body>
@@ -135,18 +137,20 @@
                 </ul>
                 <input type="submit" value="Ändern  »" name="redstnd"/>
                     <ul class="chndpdelreds">            
+                    <form id="accbg">
                     <li><input type="text" value="email@mail.com" class="pcmaildlv"/></li>
                     <li><input type="text" value="Olga" class="pcvorndlv"/></li>
                     <li><input type="text" value="Ivolga" class="pcnmedlv"/></li>
                     <li><input type="text" value="13245678" class="pcpssdlv"/></li>
                     <li><input type="text" value="040 123 456 08" class="pctlfdlv"/></li>
-                    <li><select>
+                    <li><select class="selectBlock">
                                             <option>Deutschland</option>
                                             <option>Deutschland</option>
                                             <option>Deutschland</option>
                                         </select></li>
                     <input type="submit" value="Änderungen speichern  »"/>
                     <input type="submit" value="zurück ohne zu speichern »" class="greacs" />
+                    </form>
                     </ul> 
                 <input  type="submit" value="als Standard-Rechnungs- und Lieferadresse verwenden  »" class="greacc"/>
             </div>
