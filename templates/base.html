@@ -1,0 +1,474 @@
+<!doctype html>
+{% load i18n %}
+{% load localeurl_tags %}
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="ru" class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">	
+	<title>{% block title %}Satchless Demo Store{% endblock %}</title>
+	<meta name="description" content="">
+	<meta name="author" content="Pavel">	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<link rel="shortcut icon" href="{{ STATIC_URL }}favicon.ico">
+	<link rel="apple-touch-icon" href="{{ STATIC_URL }}apple-touch-icon.png">
+	<link rel="stylesheet" href="{{ STATIC_URL }}css/style.css?v=2">
+    <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/mdr.js"></script> 
+    <script type="text/javascript" src="{{ STATIC_URL }}js/myscript.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/select.js"></script>
+    <script src="{{ STATIC_URL }}js/fancybox.js"></script> 
+
+
+</head>
+<body>
+<div class="wrapper">
+<div class="loginbl">
+            <div class="login"><a href="/login.html">Anmelden / Registrieren</a></div>
+            <div class="fullorder" style="display: none;">
+            <form method="#" action="#" id="couproduct">
+                <div class="title"><a href="#">Zum Einkaufskorb (full view) » </a></div>
+                <div class="prodcat">
+                    <div class="name">Produkt</div>
+                    <div class="pric">Preis €</div>
+                    <div class="amount">Anzahl</div>
+                </div>
+                     <div class="listprod">
+                    <div class="name">Produkt Name Name Zeile 2</div>
+                    <div class="pric">72,90</div>
+                    <div class="amount"><input type="text" value="3" class="monprod" maxlength='3' onkeyup="return proverka(this);"/><a href="#" class="cls"></a></div>
+                </div>
+                     <div class="listprod">
+                    <div class="name">Produkt Name Name Zeile 2</div>
+                    <div class="pric">72,90</div>
+                    <div class="amount"><input type="text" value="3" class="monprod" maxlength='3' onkeyup="return proverka(this);"/><a href="#" class="cls"></a></div>
+                </div>
+                     <div class="listprod">
+                    <div class="name">Produkt Name Name Zeile 2</div>
+                    <div class="pric">72,90</div>
+                    <div class="amount"><input type="text" value="3" class="monprod" maxlength='3' onkeyup="return proverka(this);"/><a href="#" class="cls"></a></div>
+                </div>
+                <div class="listprod">
+                    <div class="name">Produkt Name Name Zeile 2</div>
+                    <div class="pric">72,90</div>
+                    <div class="amount"><input type="text" value="3" class="monprod" maxlength='3' onkeyup="return proverka(this);"/><a href="#" class="cls"></a></div>
+                </div>
+            </form><span></span>
+        </div>
+        <div class="visbcart">
+            <div id="cart"><a href="#"><span></span> Artikel</a></div>
+            <div class="check"><a href="#">Check out</a></div>
+        </div>
+    </div>
+
+    
+		<header>
+		  <div class="logo">
+            <h1 id="title">Hunde</h1><h1 id="titlec">Stylist</h1>
+            <p>the finest dog's bountique</p>
+          </div>
+          <div class="search">
+          <form action="">
+            <input type="text" value="Suchwort" onclick="this.value=''"/>
+            <input type="submit" value="Suche"/>
+          </form>
+          </div>
+          <div class="slieder">
+            <h2>THE FINEST DOG´S BOUTIQUE</h2>
+            <h3>THE FINEST DOG´S BOUTIQUE</h3>
+          
+          </div>
+
+            <div class="nav">
+            <div class="dogface"></div>		
+        <div class="selectbox">
+        <form id="style2">
+           <select name="d" class="selectBlock" >
+              <option value="1">Unsere Services</option>
+              <option value="2">Unsere Services</option>
+              <option value="3">Unsere Services</option>
+            </select>
+        </form>
+            </div>
+                <ul>
+                    <li class="curent">
+                        <div class="halsbänder"></div>
+                        <a href="#">Halsbander</a>
+                        <ul>
+                           <li><a href="#">Halsbander</a></li>
+                           <li><a href="#">Halsbander mit Leine</a></li>
+                           <li><a href="#">Halsbander ohne</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="regensachen"></div>
+                        <a href="#">Regensachen</a>
+                      <ul>
+                           <li><a href="#">Halsbander</a></li>
+                           <li><a href="#">Halsbander mit Leine</a></li>
+                           <li><a href="#">Halsbander ohne</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="transport"></div>
+                        <a href="#">Transport</a>
+                         <ul>
+                           <li><a href="#">Halsbander</a></li>
+                           <li><a href="#">Halsbander mit Leine</a></li>
+                           <li><a href="#">Halsbander ohne</a></li>
+                        </ul>
+                    </li>
+                    <li><div class="hundegeschirre" ></div><a href="#">Hundegeschirre</a></li>
+                    <li><div class="bekleidung" ></div><a href="#">Bekleidung</a></li>
+                    <li><div class="halstucher" ></div><a href="#">Halstucher</a></li>
+                    <li><div class="hundebetten" ></div><a href="#">Hundebetten</a></li>  
+                </ul>
+
+         </div>
+         <div class="pagpas">
+            <div class="pagnmps">
+              <span>Hunde Stylist  » </span><span class="curent">Transport</span>    
+            </div>
+            <div class="ansic">
+             <p>Ansic</p>
+                <form action="#" method="#" id="ansick">
+               
+                <select class="selectBlock">
+                    <option>Neuestes Produkt zuerst</option>
+                     <option>Neuestes Produkt zuerst</option>
+                      <option>Neuestes Produkt zuerst</option>
+                       <option>Neuestes Produkt zuerst</option>
+                </select>
+                </form>
+            </div>
+         </div>
+		</header>
+
+    <div class="content">
+       <div class="prod_wrap"  >
+        <div class="product">
+        <div class="prev"><img src="img/sabaka.jpg" alt=""  title="sabaka" width="298px" height="198px"/></div>
+        <div class="info">
+            <div class="ttl"><p>Produktname kann auch 2-zeilig sein</p></div>
+            <div class="price"><small>ab</small> <strong>&#8364; 123,20</strong></div>
+            <div class="conthd">
+                <div id="desitem">
+                  <p>Produktbeschreibung z.B. Sehr edeles Halsband mit Glitzersteinen,weiß,gold, 2 Größen.</p>
+                </div>
+                <div class="loginza">
+                    <a href="#" class="fnc">Funktion</a>
+                    <a href="#" class="mid">weitere Funktion</a>
+                    <a href="#" class="like">Like</a>
+                </div>
+            </div>
+        </div>
+        
+        </div>
+        <div class="infopod"></div>
+        </div>
+             <div class="prod_wrap"  >
+        <div class="product">
+        <div class="prev"><img src="img/sabaka.jpg" alt=""  title="sabaka" width="298px" height="198px"/></div>
+        <div class="info">
+            <div class="ttl"><p>Produktname kann auch 2-zeilig sein</p></div>
+            <div class="price"><small>ab</small> <strong>&#8364; 123,20</strong></div>
+            <div class="conthd">
+                <div id="desitem">
+                  <p>Produktbeschreibung z.B. Sehr edeles Halsband mit Glitzersteinen,weiß,gold, 2 Größen.</p>
+                </div>
+                <div class="loginza">
+                    <a href="#" class="fnc">Funktion</a>
+                    <a href="#" class="mid">weitere Funktion</a>
+                    <a href="#" class="like">Like</a>
+                </div>
+            </div>
+        </div>
+        
+        </div>
+        <div class="infopod"></div>
+        </div>
+             <div class="prod_wrap"  >
+        <div class="product">
+        <div class="prev"><img src="img/sabaka.jpg" alt=""  title="sabaka" width="298px" height="198px"/></div>
+        <div class="info">
+            <div class="ttl"><p>Produktname kann auch 2-zeilig sein</p></div>
+            <div class="price"><small>ab</small> <strong>&#8364; 123,20</strong></div>
+            <div class="conthd">
+                <div id="desitem">
+                  <p>Produktbeschreibung z.B. Sehr edeles Halsband mit Glitzersteinen,weiß,gold, 2 Größen.</p>
+                </div>
+                <div class="loginza">
+                    <a href="#" class="fnc">Funktion</a>
+                    <a href="#" class="mid">weitere Funktion</a>
+                    <a href="#" class="like">Like</a>
+                </div>
+            </div>
+        </div>
+        
+        </div>
+        <div class="infopod"></div>
+        </div>
+             <div class="prod_wrap"  >
+        <div class="product">
+        <div class="prev"><img src="img/sabaka.jpg" alt=""  title="sabaka" width="298px" height="198px"/></div>
+        <div class="info">
+            <div class="ttl"><p>Produktname kann auch 2-zeilig sein</p></div>
+            <div class="price"><small>ab</small> <strong>&#8364; 123,20</strong></div>
+            <div class="conthd">
+                <div id="desitem">
+                  <p>Produktbeschreibung z.B. Sehr edeles Halsband mit Glitzersteinen,weiß,gold, 2 Größen.</p>
+                </div>
+                <div class="loginza">
+                    <a href="#" class="fnc">Funktion</a>
+                    <a href="#" class="mid">weitere Funktion</a>
+                    <a href="#" class="like">Like</a>
+                </div>
+            </div>
+        </div>
+        
+        </div>
+        <div class="infopod"></div>
+        </div>
+             <div class="prod_wrap"  >
+        <div class="product">
+        <div class="prev"><img src="img/sabaka.jpg" alt=""  title="sabaka" width="298px" height="198px"/></div>
+        <div class="info">
+            <div class="ttl"><p>Produktname kann auch 2-zeilig sein</p></div>
+            <div class="price"><small>ab</small> <strong>&#8364; 123,20</strong></div>
+            <div class="conthd">
+                <div id="desitem">
+                  <p>Produktbeschreibung z.B. Sehr edeles Halsband mit Glitzersteinen,weiß,gold, 2 Größen.</p>
+                </div>
+                <div class="loginza">
+                    <a href="#" class="fnc">Funktion</a>
+                    <a href="#" class="mid">weitere Funktion</a>
+                    <a href="#" class="like">Like</a>
+                </div>
+            </div>
+        </div>
+        
+        </div>
+        <div class="infopod"></div>
+        </div>
+             <div class="prod_wrap"  >
+        <div class="product">
+        <div class="prev"><img src="img/sabaka.jpg" alt=""  title="sabaka" width="298px" height="198px"/></div>
+        <div class="info">
+            <div class="ttl"><p>Produktname kann auch 2-zeilig sein</p></div>
+            <div class="price"><small>ab</small> <strong>&#8364; 123,20</strong></div>
+            <div class="conthd">
+                <div id="desitem">
+                  <p>Produktbeschreibung z.B. Sehr edeles Halsband mit Glitzersteinen,weiß,gold, 2 Größen.</p>
+                </div>
+                <div class="loginza">
+                    <a href="#" class="fnc">Funktion</a>
+                    <a href="#" class="mid">weitere Funktion</a>
+                    <a href="#" class="like">Like</a>
+                </div>
+            </div>
+        </div>
+        
+        </div>
+        <div class="infopod"></div>
+        </div>
+             <div class="prod_wrap"  >
+        <div class="product">
+        <div class="prev"><img src="img/sabaka.jpg" alt=""  title="sabaka" width="298px" height="198px"/></div>
+        <div class="info">
+            <div class="ttl"><p>Produktname kann auch 2-zeilig sein</p></div>
+            <div class="price"><small>ab</small> <strong>&#8364; 123,20</strong></div>
+            <div class="conthd">
+                <div id="desitem">
+                  <p>Produktbeschreibung z.B. Sehr edeles Halsband mit Glitzersteinen,weiß,gold, 2 Größen.</p>
+                </div>
+                <div class="loginza">
+                    <a href="#" class="fnc">Funktion</a>
+                    <a href="#" class="mid">weitere Funktion</a>
+                    <a href="#" class="like">Like</a>
+                </div>
+            </div>
+        </div>
+        
+        </div>
+        <div class="infopod"></div>
+        </div>
+             <div class="prod_wrap"  >
+        <div class="product">
+        <div class="prev"><img src="img/sabaka.jpg" alt=""  title="sabaka" width="298px" height="198px"/></div>
+        <div class="info">
+            <div class="ttl"><p>Produktname kann auch 2-zeilig sein</p></div>
+            <div class="price"><small>ab</small> <strong>&#8364; 123,20</strong></div>
+            <div class="conthd">
+                <div id="desitem">
+                  <p>Produktbeschreibung z.B. Sehr edeles Halsband mit Glitzersteinen,weiß,gold, 2 Größen.</p>
+                </div>
+                <div class="loginza">
+                    <a href="#" class="fnc">Funktion</a>
+                    <a href="#" class="mid">weitere Funktion</a>
+                    <a href="#" class="like">Like</a>
+                </div>
+            </div>
+        </div>
+        
+        </div>
+        <div class="infopod"></div>
+        </div>
+             <div class="prod_wrap"  >
+        <div class="product">
+        <div class="prev"><img src="img/sabaka.jpg" alt=""  title="sabaka" width="298px" height="198px"/></div>
+        <div class="info">
+            <div class="ttl"><p>Produktname kann auch 2-zeilig sein</p></div>
+            <div class="price"><small>ab</small> <strong>&#8364; 123,20</strong></div>
+            <div class="conthd">
+                <div id="desitem">
+                  <p>Produktbeschreibung z.B. Sehr edeles Halsband mit Glitzersteinen,weiß,gold, 2 Größen.</p>
+                </div>
+                <div class="loginza">
+                    <a href="#" class="fnc">Funktion</a>
+                    <a href="#" class="mid">weitere Funktion</a>
+                    <a href="#" class="like">Like</a>
+                </div>
+            </div>
+        </div>
+        
+        </div>
+        <div class="infopod"></div>
+        </div>
+             <div class="prod_wrap"  >
+        <div class="product">
+        <div class="prev"><img src="img/sabaka.jpg" alt=""  title="sabaka" width="298px" height="198px"/></div>
+        <div class="info">
+            <div class="ttl"><p>Produktname kann auch 2-zeilig sein</p></div>
+            <div class="price"><small>ab</small> <strong>&#8364; 123,20</strong></div>
+            <div class="conthd">
+                <div id="desitem">
+                  <p>Produktbeschreibung z.B. Sehr edeles Halsband mit Glitzersteinen,weiß,gold, 2 Größen.</p>
+                </div>
+                <div class="loginza">
+                    <a href="#" class="fnc">Funktion</a>
+                    <a href="#" class="mid">weitere Funktion</a>
+                    <a href="#" class="like">Like</a>
+                </div>
+            </div>
+        </div>
+        
+        </div>
+        <div class="infopod"></div>
+        </div>
+             <div class="prod_wrap"  >
+        <div class="product">
+        <div class="prev"><img src="img/sabaka.jpg" alt=""  title="sabaka" width="298px" height="198px"/></div>
+        <div class="info">
+            <div class="ttl"><p>Produktname kann auch 2-zeilig sein</p></div>
+            <div class="price"><small>ab</small> <strong>&#8364; 123,20</strong></div>
+            <div class="conthd">
+                <div id="desitem">
+                  <p>Produktbeschreibung z.B. Sehr edeles Halsband mit Glitzersteinen,weiß,gold, 2 Größen.</p>
+                </div>
+                <div class="loginza">
+                    <a href="#" class="fnc">Funktion</a>
+                    <a href="#" class="mid">weitere Funktion</a>
+                    <a href="#" class="like">Like</a>
+                </div>
+            </div>
+        </div>
+        
+        </div>
+        <div class="infopod"></div>
+        </div>
+             <div class="prod_wrap"  >
+        <div class="product">
+        <div class="prev"><img src="img/sabaka.jpg" alt=""  title="sabaka" width="298px" height="198px"/></div>
+        <div class="info">
+            <div class="ttl"><p>Produktname kann auch 2-zeilig sein</p></div>
+            <div class="price"><small>ab</small> <strong>&#8364; 123,20</strong></div>
+            <div class="conthd">
+                <div id="desitem">
+                  <p>Produktbeschreibung z.B. Sehr edeles Halsband mit Glitzersteinen,weiß,gold, 2 Größen.</p>
+                </div>
+                <div class="loginza">
+                    <a href="#" class="fnc">Funktion</a>
+                    <a href="#" class="mid">weitere Funktion</a>
+                    <a href="#" class="like">Like</a>
+                </div>
+            </div>
+        </div>
+        
+        </div>
+        <div class="infopod"></div>
+        </div>
+        
+
+    </div>
+
+</div>
+<div class="bot_bg">
+        <nav class="pagenav">
+            <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a href="#">...</a>
+            <a href="#">6</a>
+            <a href="#">7</a>
+            <a href="#">8</a>
+            <span>9</span>
+            <a href="#">10</a>
+            <a href="#">11</a>
+            <a href="#">...</a>
+            <a href="#">26</a>
+            <a href="#">&raquo;</a>
+            <input type="text" maxlength="3"/><a href="#">&raquo;&raquo;</a>
+        </nav>
+</div>
+    <div class="footersc">
+    <footer>
+        <div class="wrapper">
+        <nav class="footsc">
+        <a href="#">Impressum</a><i></i>
+          <a href="#">AGB</a><i></i>
+            <a href="#">Nutzungsbedingungen</a><i></i>
+              <a href="#">Datenschutz</a><i></i>
+                <a href="#">Gesetzliche Widerrufsbelehrung</a><i></i>
+                  <a href="#">Size guide</a><i></i>
+                    <a href="#">Hilfe</a><i></i>
+                      <a href="#">Sitemap</a><i></i>
+                        <a href="#">Kontaktmöglichkeiten</a>
+        </nav>
+        <div class="contact">
+            <h4>Kontakt</h4>
+            <p>Hunde-Stylist Shop • Musterstraße 123a • 12345 Hamburg</p> 
+            <a href="mailto:wau@hunde-stylist.de">wau@hunde-stylist.de</a> • Tel. 040 - 123 456 78 • Fax 040 - 123 456 79
+        </div>
+        <div class="cosial">
+        <p>folge uns auf</p>
+            <a href="#" class="fc"></a>
+            <a href="#" class="tw"></a>
+            <a href="#" class="rs"></a>
+        <a href="#"></a>
+        </div>
+        
+       <nav class="catlist">
+        <h3>Kategorien</h3>
+            <a href="#">Halsbänder</a>      
+            <a href="#">Halsbänder + Leine</a>       
+            <a href="#">Regensachen</a>
+            <a href="#">Transport</a> 
+            <a href="#">Hundegeschirre</a>       
+            <a href="#">Bekleidung</a>
+            <a href="#">Halstücher</a>   
+            <a href="#">Hundebetten</a>
+           
+        </nav>
+       
+        </div>
+         
+    </footer>
+    <footer class="cprt">
+        <p>Copyright &copy; Hunde-Stylist 2011</p>
+    </footer>
+    </div>
+
+</body>
+</html>

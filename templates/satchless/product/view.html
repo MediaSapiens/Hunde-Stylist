@@ -1,0 +1,105 @@
+{% extends "satchless/base.html" %}
+{% load i18n %}
+{% load pagination_tags %}
+{% load prices %}
+{% load product_prices %}
+{% load satchless_image %}
+
+{% block title %}{{ block.super }} &mdash; {{ product.name }}{% endblock %}
+
+{% block body-class %}{{ block.super }} {% if path %}cat-{{ path.0.slug }} {% endif %}product{% endblock %}
+
+{% block extra-body %}
+{{ block.super }}
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/cloud-zoom.css" />
+
+<script type="text/javascript" src="{{ STATIC_URL }}js/cloud-zoom.1.0.2.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}js/product.js"></script>
+
+{% endblock %}
+
+{% block breadcrumbs %}
+{% if path %}
+<ul id="breadcrumbs">{% spaceless %}
+    {% for category in path %}
+    <li class="{% if forloop.first %}first{% endif %}{% if forloop.last %} active{% endif %}"><a href="/">{{ category }}</a></li>
+    {% endfor %}
+{% endspaceless %}</ul>
+{% endif %}
+{% endblock %}
+
+{% block content %}
+<div class="clear"></div>
+
+<div class="grid_8 alpha">
+    <div class="main-photo">
+    {% if product.main_image %}
+        <a href="{{ product.main_image.image.url }}" class="cloud-zoom" rel="position: 'inside', showTitle: false"><img src="{{ product.main_image|at_size:'product-detail' }}" /></a>
+    {% endif %}
+    </div>
+</div>
+
+<div class="grid_16 omega product-details">
+    <div class="grid_11 alpha">
+        <form action="" method="post">
+            <div class="product-description">
+                {% if product.make %}
+                    <span class="manufacture">{{ product.make }}</span>
+                {% endif %}
+                    <h1>{{ product.name }}</h1>
+                    <div class="text">
+                        {{ product.description|linebreaks }}
+                    </div>
+            </div>
+            <div class="grid_11 alpha">
+                {% csrf_token %}
+                <table>
+                    {{ product.cart_form.as_table }}
+                </table>
+            </div>
+    </div>
+    <div class="grid_5 omega">
+        <div class="sidebar">
+            <div class="add-to-cart">
+                <div class="product-price">
+            {% product_price_range product as price_range %}
+            {% product_price_range product discount=0 as undiscounted_price_range %}
+            {% if price_range.min_price != price_range.max_price %}
+                {% if price_range.min_price != undiscounted_price_range.min_price or price_range.max_price != undiscounted_price_range.max_price %}
+                        <span class="strike">{{ undiscounted_price_range.min_price|gross|floatformat:2 }} – {{ undiscounted_price_range.max_price|gross|floatformat:2 }}</span>
+                {% endif %}
+                        <span class="fullprice">{{ price_range.min_price|gross|floatformat:2 }}</span><span class="currency">{{ price_range.min_price|currency }}</span> – <span class="fullprice">{{ price_range.max_price|gross|floatformat:2 }}</span><span class="currency">{{ price_range.max_price|currency }}</span>
+            {% else %}
+                {% if price_range.max_price != undiscounted_price_range.max_price %}
+                        <span class="strike">{{ undiscounted_price_range.max_price|gross|floatformat:2 }}</span>
+                {% endif %}
+                        <span class="fullprice">{{ price_range.min_price|gross|floatformat:2 }}</span><span class="currency">{{ price_range.min_price|currency }}</span>
+            {% endif %}
+                        <p class="info">
+                            Inclusive VAT <br />
+                            Exclusive shipping costs<br />
+                        </p>
+                    </div>
+                    <input class="button cart" name="satchless_cart" type="submit" value="{% trans "Add to cart" %}" />
+                    <input class="wishlist" name="satchless_wishlist" type="submit" value="{% trans "Add to whishlist" %}" />
+            </div>
+        </div>
+        </form>
+    </div>
+</div>
+<div class="clear"></div>
+
+<div class="thumbs grid_8 alpha">
+{% spaceless %}
+{% for image in product.images.all %}
+    {% with image|at_size:'product-thumb' as thumb %}
+        {% with image|at_size:'product-detail' as detail %}
+    <a class="grid_2 {% if not forloop.counter0 or forloop.counter|divisibleby:5 %}alpha{% endif %}{% if forloop.counter0 and forloop.counter|divisibleby:4 %}omega{% endif %}" href="{{ detail }}" data-big-picture="{{ image.image.url }}" title="Click to see this image enlarged"><img src="{{ thumb }}" alt="{{ image.caption }}"{% if forloop.first %} class="active"{% endif %} /></a>
+        {% endwith %}
+    {% endwith %}
+{% endfor %}
+{% endspaceless %}
+</div>
+
+<div class="clear"></div>
+{% endblock %}
