@@ -12,3 +12,4 @@ git+http://github.com/chernysh/satchless.git
 hg+http://bitbucket.org/carljm/django-markitup
 git+git://github.com/django-mptt/django-mptt.git#egg=django-mptt
 git+git://github.com/mirumee/django-payments.git#egg=django-payments
+git+https://github.com/sehmaschine/django-grappelli.git
