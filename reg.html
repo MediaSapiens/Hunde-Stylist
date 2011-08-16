@@ -14,10 +14,12 @@
 	<link rel="shortcut icon" href="/favicon.ico">
 	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 	<link rel="stylesheet" href="css/style.css?v=2">
-    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/libs/jquery.min.js"></script>
+    <script type="text/javascript" src="js/libs/modernizr.min.js"></script> 
     <script type="text/javascript" src="js/myscript.js"></script>
-    <script type="text/javascript" src="js/mdr.js"></script> 
-   
+    <script type="text/javascript" src="js/select.js"></script>
+    <script src="js/fancybox.js"></script>
+    <script src="js/placeholder.min.js"></script>
 </head>
 <body>
 <div class="loginwr"></div>
@@ -30,13 +32,13 @@
            <span>Bitte geben Sie Ihre Accountinformationen ein.</span>
                 <form>
                 <p>E-Mail</p>
-                <input  type="text" value="email@mail.com" onclick="this.value=''" class="mailr"/>
+                <input  type="text" placeholder="email@mail.com" class="mailr"/>
                 <p>Vorname</p>
-                <input  type="text" value="Olga" onclick="this.value=''" class="namr"/>
+                <input  type="text" placeholder="Olga" class="namr"/>
                 <p>Nachname</p>
-                <input  type="text" value="Ivolga" onclick="this.value=''" class="nachr"/>
+                <input  type="text" placeholder="Ivolga" class="nachr"/>
                 <p>Passwort</p>
-                <input  type="password" value="123456" onclick="this.value=''"/>
+                <input  type="password" value="123456"/>
                 <label class="swtrg"><div class="chkl"><input type="checkbox" id="frau"/></div>Frau</label>
                 <label class="switls"><div class="chkl"><input type="checkbox" id="mann"/></div>Mann</label>
                 <label class="swtrgs"><div class="chkl"><input type="checkbox" id="letter"/></div>Newsletter abonnieren</label>
@@ -98,7 +100,7 @@
           </div>
           <div class="search">
           <form action="">
-            <input type="text" value="Suchwort" onclick="this.value=''"/>
+            <input type="text" value="Suchwort"/>
             <input type="submit" value="Suche"/>
           </form>
           </div>

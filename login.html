@@ -14,11 +14,12 @@
 	<link rel="shortcut icon" href="/favicon.ico">
 	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 	<link rel="stylesheet" href="css/style.css?v=2">
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/libs/modernizr-1.7.min.js"></script> 
+    <script type="text/javascript" src="js/libs/jquery.min.js"></script>
+    <script type="text/javascript" src="js/libs/modernizr.min.js"></script> 
     <script type="text/javascript" src="js/myscript.js"></script>
     <script type="text/javascript" src="js/select.js"></script>
-    <script src="js/fancybox.js"></script>    
+    <script src="js/fancybox.js"></script>
+    <script src="js/placeholder.min.js"></script> 
 </head>
 <body>
 <div class="loginwr"></div>
@@ -30,7 +31,7 @@
            <div class="dtrblock">
                 <form>
                 <p>E-Mail</p>
-                <input  type="text" placeholder="email@mail.com" onclick="this.value=''"/>
+                <input  type="text" placeholder="email@mail.com"/>
                 <p>Password</p>
                 <input  type="password" value="123456" id="pass"/>
                 
@@ -78,12 +79,12 @@
                      <div class="listprod">
                     <div class="name">Produkt Name Name Zeile 2</div>
                     <div class="pric">72,90</div>
-                    <div class="amount"><input type="text" value="3" class="monprod" maxlength='3' onkeyup="return proverka(this);"/><a href="#" class="cls"></a></div>
+                    <div class="amount"><input type="text" value="3" class="monprod" maxlength='3'/><a href="#" class="cls"></a></div>
                 </div>
                      <div class="listprod">
                     <div class="name">Produkt Name Name Zeile 2</div>
                     <div class="pric">72,90</div>
-                    <div class="amount"><input type="text" value="3" class="monprod" maxlength='3' onkeyup="return proverka(this);"/><a href="#" class="cls"></a></div>
+                    <div class="amount"><input type="text" value="3" class="monprod" maxlength='3' /><a href="#" class="cls"></a></div>
                 </div>
                      <div class="listprod">
                     <div class="name">Produkt Name Name Zeile 2</div>
@@ -111,7 +112,7 @@
           </div>
           <div class="search">
           <form action="">
-            <input type="text" value="Suchwort" onclick="this.value=''"/>
+            <input type="text" placeholder="Suchwort" />
             <input type="submit" value="Suche"/>
           </form>
           </div>

@@ -1,5 +1,7 @@
  $(document).ready(function(){
-           //remmove later from cart count
+    //placeholder script
+jQuery('input[placeholder], textarea[placeholder]').placeholder();
+    //remmove later from cart count
          $(".monprod").keypress(function( b ){
                 var C = /[0-9\x25\x24\x23]/;
                 var a = b.which;
