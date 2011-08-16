@@ -549,7 +549,7 @@ a.gesc{background-position: -455px -536px;}
 .backet .tlcoun input{width:37px; height: 24px;border: none; background: #c49470;text-align: center; font-weight: bold;float: left; font-size: 12px; color: #3b2314; }
 .cls{background: url(../img/sprite2.png) no-repeat 0 -200px; width: 8px ; height: 8px;display: block;float: left;margin: 8px 0 0 10px;}
 .shiping {color:#C3996B;float: left; width: 100%; border-top: 1px solid #F87B00;margin-top: 3px;padding-top:20px ;}
-.shiping  input[type=submit]{border: none; background: transparent url(../img/shiping.png) no-repeat; width:485px ; height:32px; float: left;}
+.shiping .deliveri{border: none; background: transparent url(../img/shiping.png) no-repeat; width:485px ; height:27px; float: left; color: white;font-size: 18px;text-align: center;padding-top: 5px;}
 .shiping span {margin: 10px 125px 0 10px;font-size: 14px; float: left;}
 .shiping  .tlprcc {width: 110px;float: left; color: #F69220;margin-left: 50px;font-size: 14px;}
 .total {float: left; width: 100%;margin-top: 20px;}

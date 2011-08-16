@@ -36,13 +36,11 @@ jQuery('input[placeholder], textarea[placeholder]').placeholder();
     $('.chkl').click(function(){
         if($(this).children('input:checked').length)
             {
-                $(this).css('backgroundPosition',' -1633px -754px');
-              
+                $(this).css('backgroundPosition',' -1633px -754px');              
             }
         else
             {
-                $(this).css('backgroundPosition','-1633px -692px');
-               
+                $(this).css('backgroundPosition','-1633px -692px');               
             }
     });
     //backet over page
@@ -54,6 +52,7 @@ jQuery('input[placeholder], textarea[placeholder]').placeholder();
             sum += parseInt( count );
             total += parseFloat( price ) * parseInt( count );
         });
+        total=total+6.90;
         $('.makord span.ddt').html(sum);
         $('.total .tlprct').html(total.toFixed(2));
     }
@@ -119,8 +118,7 @@ jQuery('input[placeholder], textarea[placeholder]').placeholder();
         },
         function() {
             $(this).removeClass("active");
-            $(this).find('ul').slideUp('fast');
-            
+            $(this).find('ul').slideUp('fast');            
         }
     );
     $('.nav ul li.hlsb').mouseenter(function(){
@@ -164,7 +162,8 @@ jQuery('input[placeholder], textarea[placeholder]').placeholder();
         
     }).mouseleave(function (){
         $(this).css('background','none');
-    });  //style for chekbox
+    });  
+    //style for chekbox
     $('.stlchek input[type=checkbox]').css('opacity','0');
     $('input:checked').parents('.stlchek').css({backgroundPosition: ' -1044px -1545px'});
     $('.stlchek').click(function(){
@@ -236,8 +235,4 @@ jQuery('input[placeholder], textarea[placeholder]').placeholder();
               $('#cart span').html(sum);
             })        
             })
-            $("a#fncbox").fancybox({
-				'transitionIn'	: 'none',
-				'transitionOut'	: 'none'	
-			});
       });

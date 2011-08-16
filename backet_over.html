@@ -14,62 +14,62 @@
 	<link rel="shortcut icon" href="/favicon.ico">
 	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 	<link rel="stylesheet" href="css/style.css?v=2">
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/mdr.js"></script> 
+    <script type="text/javascript" src="js/libs/jquery.min.js"></script>
+    <script type="text/javascript" src="js/libs/modernizr.min.js"></script> 
     <script type="text/javascript" src="js/myscript.js"></script>
     <script type="text/javascript" src="js/select.js"></script>
-    <script src="js/fancybox.js"></script> 
-
+    <script src="js/fancybox.js"></script>
+    <script src="js/placeholder.min.js"></script>
 </head>
 <body>
 <div class="wrapper">
 <div class="loginbl">
-            <div class="login"><a href="#">Anmelden / Registrieren</a></div>
+            <div class="login"><a href="login.html">Anmelden / Registrieren</a></div>
             <div class="fullorder" style="display: none;">
-            <div class="title"><a href="#">Zum Einkaufskorb (full view) » </a></div>
-
-            <div class="prodcat">
-                <div class="name">Produkt</div>
-                <div class="pric">Preis €</div>
-                <div class="amount">Anzahl</div>
-            </div>
-                 <div class="listprod">
-                <div class="name">Produkt Name Name Zeile 2</div>
-                <div class="pric">72,90</div>
-                <div class="amount"><input type="text" value="3" class="monprod"/> <a href="#" class="cls"></a></div>
-            </div>
-                 <div class="listprod">
-                <div class="name">Produkt Name Name Zeile 2</div>
-                <div class="pric">72,90</div>
-                <div class="amount"><input type="text" value="3" class="monprod"/> <a href="#" class="cls"></a></div>
-            </div>
-                 <div class="listprod">
-                <div class="name">Produkt Name Name Zeile 2</div>
-                <div class="pric">72,90</div>
-                <div class="amount"><input type="text" value="3" class="monprod"/> <a href="#" class="cls"></a></div>
-            </div>
-            <div class="listprod">
-                <div class="name">Produkt Name Name Zeile 2</div>
-                <div class="pric">72,90</div>
-                <div class="amount"><input type="text" value="3" class="monprod"/> <a href="#" class="cls"></a></div>
-            </div>
+            <form method="#" action="#" id="couproduct">
+                <div class="title"><a href="#">Zum Einkaufskorb (full view) » </a></div>
+                <div class="prodcat">
+                    <div class="name">Produkt</div>
+                    <div class="pric">Preis €</div>
+                    <div class="amount">Anzahl</div>
+                </div>
+                     <div class="listprod">
+                    <div class="name">Produkt Name Name Zeile 2</div>
+                    <div class="pric">72,90</div>
+                    <div class="amount"><input type="text" value="3" class="monprod" maxlength='3' /><a href="#" class="cls"></a></div>
+                </div>
+                     <div class="listprod">
+                    <div class="name">Produkt Name Name Zeile 2</div>
+                    <div class="pric">72,90</div>
+                    <div class="amount"><input type="text" value="3" class="monprod" maxlength='3' /><a href="#" class="cls"></a></div>
+                </div>
+                     <div class="listprod">
+                    <div class="name">Produkt Name Name Zeile 2</div>
+                    <div class="pric">72,90</div>
+                    <div class="amount"><input type="text" value="3" class="monprod" maxlength='3'/><a href="#" class="cls"></a></div>
+                </div>
+                <div class="listprod">
+                    <div class="name">Produkt Name Name Zeile 2</div>
+                    <div class="pric">72,90</div>
+                    <div class="amount"><input type="text" value="3" class="monprod" maxlength='3'/><a href="#" class="cls"></a></div>
+                </div>
+            </form><span></span>
         </div>
         <div class="visbcart">
-            <div id="cart"><a href="#">12 Artikel</a></div>
+            <div id="cart"><a href="#"><span></span> Artikel</a></div>
             <div class="check"><a href="#">Check out</a></div>
         </div>
     </div>
 
- 	<div id="header-container">
     
 		<header>
 		  <div class="logo">
-            <h1 id="title">Hunde</h1><h1 id="titlec">Stylist</h1>
-            <p>same img text</p>
+            <h1 class="title">Hunde</h1><h1 class="titlec">Stylist</h1>
+            <p>the finest dog's bountique</p>
           </div>
           <div class="search">
           <form action="">
-            <input type="text" value="Suchwort" onclick="this.value=''"/>
+            <input type="text" placeholder="Suchwort"/>
             <input type="submit" value="Suche"/>
           </form>
           </div>
@@ -82,30 +82,57 @@
             <div class="nav">
             <div class="dogface"></div>		
         <div class="selectbox">
-           <select name="d" class="styled">
+        <form id="style2">
+           <select name="d" class="selectBlock" >
               <option value="1">Unsere Services</option>
               <option value="2">Unsere Services</option>
               <option value="3">Unsere Services</option>
             </select>
+        </form>
             </div>
                 <ul>
-					<li><div class="halsbänder" ></div><a href="#">Halsbänder</a></li>
-					<li><div class="regensachen" ></div><a href="#">Regensachen</a></li>
-                    <li><div class="transport"></div><a href="#" class="curent">Transport</a></li>
-                    <li><div class="hundegeschirre" ></div><a href="#">Hundegeschirre</a></li>
-                    <li><div class="bekleidung" ></div><a href="#">Bekleidung</a></li>
-                    <li><div class="halstücher" ></div><a href="#">Halstücher</a></li>
-                    <li><div class="hundebetten" ></div><a href="#">Hundebetten</a></li>                                                               
-				</ul>
+                    <li class="hlsb">   
+                        <a href="#">Halsbander</a>
+                        <ul>
+                           <li><a href="#">Halsbander</a></li>
+                           <li><a href="#">Halsbander mit Leine</a></li>
+                           <li><a href="#">Halsbander ohne</a></li>
+                        </ul>
+                    </li>
+                    <li class="rgns">
+                        
+                        <a href="#">Regensachen</a>
+                      <ul>
+                           <li><a href="#">Halsbander</a></li>
+                           <li><a href="#">Halsbander mit Leine</a></li>
+                           <li><a href="#">Halsbander ohne</a></li>
+                        </ul>
+                    </li>
+                    <li class="trans">
+                        
+                        <a href="#">Transport</a>
+                         <ul>
+                           <li><a href="#">Halsbander</a></li>
+                           <li><a href="#">Halsbander mit Leine</a></li>
+                           <li><a href="#">Halsbander ohne</a></li>
+                        </ul>
+                    </li>
+                    <li class="hund"><a href="#">Hundegeschirre</a></li>
+                    <li class="bekl" ><a href="#">Bekleidung</a></li>
+                    <li class="hals"><a href="#">Halstucher</a></li>
+                    <li class="hund"><a href="#">Hundebetten</a></li>  
+                </ul>
+
          </div>
          <div class="pagpas">
             <div class="pagnmps">
               <span>Hunde Stylist  » </span><span class="curent">Transport</span>    
             </div>
             <div class="ansic">
-                <form action="#" method="#">
-                <label>Ansic</label>
-                <select>
+             <p>Ansic</p>
+                <form action="#" method="#" id="ansick">
+               
+                <select class="selectBlock">
                     <option>Neuestes Produkt zuerst</option>
                      <option>Neuestes Produkt zuerst</option>
                       <option>Neuestes Produkt zuerst</option>
@@ -115,7 +142,7 @@
             </div>
          </div>
 		</header>
-	</div>
+
     <div  class="content">
         <div class="backet">
             <div class="ttlwr">
@@ -156,7 +183,7 @@
             </div>
             <div class="shiping">
                <span>Versand</span>
-               <input type="submit" value="nur noch 6 Euro bis zum kostenlosen Versand *" />
+               <div class="deliveri">nur noch 6 Euro bis zum kostenlosen Versand *</div>
                <div class="tlprcc">6.90</div>         
             </div>
             <div class="total">
