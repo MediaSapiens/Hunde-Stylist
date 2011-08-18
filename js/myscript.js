@@ -64,6 +64,7 @@ jQuery('input[placeholder], textarea[placeholder]').placeholder();
     //dele product
     $('.cls').click(function(){
         $(this).parents('.wrbask').remove();
+        calculate();
         return false;
     });
     //acc5 page show/hide form
@@ -209,30 +210,32 @@ jQuery('input[placeholder], textarea[placeholder]').placeholder();
                 });        
         $('.dldel').click(function(){
             $(this).parents('.delivhbox').remove();           
-        });
-     
+        });     
      //dropdown page begin script         
 	$("#cart").click(function(){
 		$(".fullorder").slideToggle('slow');
 		$(this).toggleClass("active"); return false;
 	});
     //remove product from cart
+     var sum=0;
+       function count() {           
+            $('.monprod').each(function(){
+              sum = sum +parseInt($(this).val());
+              $('#cart span').html(sum);
+            })
+            }
+            $('.monprod').change(function(){ 
+              sum=0;
+              count();
+            })  
+            $(count)
     $(".amount a.cls").click(function(){
                         $(this).parents(".listprod").remove();
+                       sum=0;
+                       count();    
                         return false;
                     });
       $('.ttl').click(function(){
         $(this).next().next().animate({'height': 'toggle'},'slov');
             });
-      $(function() {  
-            var sum=0; 
-            $('.monprod').each(function(){
-              sum = sum +parseInt($(this).val());
-              $('#cart span').html(sum);
-            })            
-            $('.monprod').change(function(){             
-              sum = sum +parseInt($(this).val());              
-              $('#cart span').html(sum);
-            })        
-            })
       });
