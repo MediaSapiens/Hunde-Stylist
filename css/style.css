@@ -113,7 +113,6 @@ background: -o-linear-gradient(#fff, #FBB71B);
 .ansic {float: right;margin-right: 20px;width: 210px;}
 .ansic  p{float: left;color: #754C28;font-size: 12px;}
 .ansic select {height: 16px; border: 1px solid #754C28; color: #754C28;font-size: 12px;padding: 0;background: transparent;}
-
 /*drop down menu*/
 .nav ul{float: left;list-style: none;display:inline;position: relative; z-index: 10;}
 .nav ul li {float: left;margin: 0 2px;white-space: nowrap;padding-top: 54px;display: inline;}
@@ -221,11 +220,6 @@ background: -o-linear-gradient(#fff, #FBB71B);
                         overflow:hidden;
                         padding: 4px 0 2px 12px ;}
 	#accbg .newList li a:link,.newList li a:visited,.newList li a:hover{color:#3B2314;text-decoration:none;}
-	
-
-
-
-
     #ansick {float:left;margin-left: 10px;}
 	#ansick .newListSelected{width:166px;margin:0 auto;}
 	#ansick .selectedTxt{width:161px;
@@ -257,10 +251,6 @@ background: -o-linear-gradient(#fff, #FBB71B);
                         overflow:hidden;
                         padding: 2px 0 2px 5px ;}
 	#ansick .newList li a:link,.newList li a:visited,.newList li a:hover{color:#754C28;text-decoration:none;}
-	
-    
-    
-    
     #style2 {float: left;margin: 54px 40px 0 -35px;}
 	#style2 .newListSelected{width:152px;margin:0 auto;}
 	#style2 .selectedTxt{width:147px;height:20px;padding:1px 0 0 5px;overflow:hidden;background:url(../img/sprite2.png) no-repeat -1044px -1061px;
@@ -269,7 +259,6 @@ background: -o-linear-gradient(#fff, #FBB71B);
 	#style2 .newList li{padding:0;margin:0;width: 152px;}
 	#style2 .newList li a{display:block;background:#3B2314;font-size:15px;line-height:normal;outline:none;height:18px;overflow:hidden;padding: 2px 0 2px 5px ;}
 	#style2 .newList li a:link,.newList li a:visited,.newList li a:hover{color:#F69220;text-decoration:none;}
-
 /*select end*/
 #cloud-zoom-big{border: 1px solid #C3996B;width: 399px !important;height: 400px !important;left: 0 !important;top: 0 !important;}
 /*content*/
@@ -428,7 +417,7 @@ ul.chndpdelredsn {width: 460px;display: none;margin: 20px 0 0 80px;}
 *:first-child+html ul.chndpdelredsn  li input {margin-bottom: 20px;}
 *:first-child+html .adreparam .btn1 {margin-right: 20px;}
 *:first-child+html  #rdtcadd{margin: 0;}
-*:first-child+html ul.chndpdelreds li{font-size: 80<strong></strong>%;}
+*:first-child+html ul.chndpdelreds li{font-size: 80%;}
 /*end hack*/
 .hlppss {float: right; width: 395px; margin: 0 25px 45px 0;}
 .wrhlp {margin-top: 20px;float: left;}

@@ -1,6 +1,4 @@
  $(document).ready(function(){
-    //inner zoom
-
     //placeholder script
 jQuery('input[placeholder], textarea[placeholder]').placeholder();
     //remmove later from cart count
@@ -11,8 +9,7 @@ jQuery('input[placeholder], textarea[placeholder]').placeholder();
                 return !!(a==0||a==8||a==9||a==13||c.match(C));
             });
         $('.selectBlock').sSelect();
-    //slider script           
-
+    //slider script  
              $('.thmsld:first').addClass('active');
                 $(".thmsld a").click(function(){
                      		 $('.slider').find('.active').removeClass('active');
@@ -29,7 +26,6 @@ jQuery('input[placeholder], textarea[placeholder]').placeholder();
                                        $('.active').next('.thmsld').removeClass('active');
                                         $('.active a').click(); 
                                    });
-
     //login page checkbox
     $('.chkl input[type=checkbox]').css('opacity','0');
     $('input:checked').parents('.chkl').css({backgroundPosition: '-1633px -754px'});
@@ -52,11 +48,10 @@ jQuery('input[placeholder], textarea[placeholder]').placeholder();
             sum += parseInt( count );
             total += parseFloat( price ) * parseInt( count );
         });
-        total=total+6.90;
+        total=total+6.90;//add delivery cost
         $('.makord span.ddt').html(sum);
         $('.total .tlprct').html(total.toFixed(2));
     }
-
     $('.baskprd').change(function(){
         calculate();
     });
@@ -169,15 +164,9 @@ jQuery('input[placeholder], textarea[placeholder]').placeholder();
     $('input:checked').parents('.stlchek').css({backgroundPosition: ' -1044px -1545px'});
     $('.stlchek').click(function(){
         if($(this).children('input:checked').length)
-            {
-                $(this).css('backgroundPosition',' -1044px -1545px');
-              
-            }
+           $(this).css('backgroundPosition',' -1044px -1545px');
         else
-            {
-                $(this).css('backgroundPosition','-1044px -1477px');
-               
-            }
+          $(this).css('backgroundPosition','-1044px -1477px');
     });
     //page acc5 scroll to top
         $('.totop').click(function(){ 
