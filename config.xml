@@ -1,0 +1,207 @@
+<?xml version='1.0' encoding="iso-8859-1" ?>
+<config>
+
+<group id="setup">
+
+   <title>Einstellungen</title>
+   <desc>Hier können Sie Einstellungen zum System vornehmen</desc>
+
+   <elem id="menu_tag_limit">
+      <type>msg</type>
+      <desc>Anzahl der Kategorien, die in der Kategorie-Navigation angezeigt werden</desc>
+      <value>12</value>
+   </elem>
+   
+   <elem id="menu_depending_tag_limit">
+      <type>msg</type>
+      <desc>Anzahl der Kategorien, die in der Kategorie-Unternavigation angezeigt werden</desc>
+      <value>10</value>
+   </elem>
+   
+   <elem id="perpage">
+      <type>msg</type>
+      <desc>Anzahl der Produkte, die auf einer Seite (Produktliste) angezeigt werden</desc>
+      <value>16</value>
+   </elem>
+
+   <elem id="cs_default_title">
+      <type>msg</type>
+      <desc>Standard-Überschrift für Cross-Selling Produkte</desc>
+      <value>Dazu passt auch:</value>
+   </elem>
+
+
+   <elem id="bookmark">
+      <type>select</type>
+      <desc>Bookmarks (Lesezeichen) auf den Produktseiten anzeigen?</desc>
+      <options>ja|nein</options>
+      <value>ja</value>
+   </elem>
+
+</group>
+
+<group id="text">
+
+   <title>Beschriftungen</title>
+   <desc>Bitte tragen Sie hier Ihre Beschriftungen ein</desc>
+
+   <elem id="box_tags">
+      <type>msg</type>
+      <desc>Überschrift der Box Kategorien</desc>
+      <value>Auswahl</value>
+   </elem>
+   
+   <elem id="box_about">
+      <type>msg</type>
+      <desc>Überschrift der Box Über uns</desc>
+      <value>Über uns</value> 
+   </elem>
+   
+   <elem id="box_specials">
+      <type>msg</type>
+      <desc>Überschrift der Box Specials</desc>
+      <value>Specials</value> 
+   </elem>
+   
+   <elem id="cart_empty">
+      <type>msg</type>
+      <desc>Hinweis bei leerem Warenkorb</desc>
+      <value>Ihr Warenkorb ist leider noch leer!</value> 
+   </elem>
+
+</group>
+
+<group id="page">
+
+   <title>Allgemeine Seiten-Einstellungen</title>
+   <desc>Verschiedene grundsätzliche Seitenvorgaben</desc>
+
+   <elem id="background">
+      <type>color</type>
+      <desc>Hintergrundfarbe der Seite</desc>
+      <value>#D4CDBE</value>
+   </elem>
+   
+   <elem id="font">
+      <type>select</type>
+      <desc>Schriftart der Seite</desc>
+      <options>Arial, sans-serif | Verdana | Trebuchet MS</options>
+      <value>Arial, sans-serif </value>
+   </elem>
+   
+   <elem id="font_color">
+      <type>color</type>
+      <desc>Schriftfarbe</desc>
+      <value>#373134</value>
+   </elem>
+
+</group>
+
+<group id="colors">
+
+   <title>Farben</title>
+   <desc>Hier können Sie verschiedene Farben definieren</desc>
+   
+   <elem id="header_background">
+      <type>color</type>
+      <desc>Hintergrundfarbe für den Titelbereich</desc>
+      <value>#373134</value>
+   </elem>
+   
+   <elem id="menu_bar">
+      <type>color</type>
+      <desc>Farbe der Menü-Leiste oben</desc>
+      <value>#CB7B4A</value>
+   </elem>
+   
+   <elem id="menu_bar_hover">
+      <type>color</type>
+      <desc>Farbe der Hauptmenüpunkte bei MouseOver</desc>
+      <value>#DBA381</value>
+   </elem>
+
+   <elem id="box_header">
+      <type>color</type>
+      <desc>Farbe der Boxen-Titel</desc>
+      <value>#6D8B95</value>
+   </elem>
+   
+   <elem id="headlines">
+      <type>color</type>
+      <desc>Farbe der Überschriften</desc>
+      <value>#CB7B4A</value>
+   </elem>
+
+</group>
+
+<group id="images">
+
+   <title>Bilder &amp; Grafiken</title>
+   <desc>Hier können Sie eigene Bilder eingeben</desc>
+
+   <elem id="logo">
+      <type>img</type>
+      <desc>Ihr Firmenlogo im Titelbereich</desc>
+      <value></value>
+   </elem>
+   
+   <elem id="header_background">
+      <type>img</type>
+      <desc>Header Hintergrundbild (960 x 80 Pixel)</desc>
+      <value></value>
+   </elem>
+
+</group>
+
+<group id="cart">
+
+   <title>Warenkorb</title>
+   <desc>Einstellungen für die Warenkorbseite</desc>
+
+   <elem id="bgcolor">
+      <type>color</type>
+      <desc>Hintergrundfarbe für Farbfläche &quot;Endbetrag&quot;</desc>
+      <value>#EEEEEE</value>
+   </elem>
+
+   <elem id="fontcolor_total">
+      <type>color</type>
+      <desc>Schriftfarbe &quot;Endbetrag&quot;</desc>
+      <value></value>
+   </elem>
+
+   <elem id="tbl_header_bgcolor">
+      <type>color</type>
+      <desc>Hintergrundfarbe für Tabellenkopf</desc>
+      <value>#EEEEEE</value>
+   </elem>
+
+   <elem id="fontcolor_tbl_header">
+      <type>color</type>
+      <desc>Schriftfarbe Tabellenkopf</desc>
+      <value></value>
+   </elem>
+   
+   <elem id="border_color">
+      <type>color</type>
+      <desc>Farbe der Trennlinien</desc>
+      <value>#CCCCCC</value>
+   </elem>
+
+   <elem id="button_checkout">
+      <type>img</type>
+      <desc>Button "Zur Kasse gehen"</desc>
+      <value></value>
+   </elem>
+
+   <elem id="info">
+      <type>select</type>
+      <desc>Anzeige Infotext zum Tradoria-Bestellvorgang</desc>
+      <options>short: Kurzer Text | long: Langer Text | off: Nicht anzeigen</options>
+      <value>short</value>
+   </elem>
+
+</group>
+
+
+</config>

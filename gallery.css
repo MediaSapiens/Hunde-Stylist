@@ -1,0 +1,51 @@
+/* 
+
+ Stylesheet für Template: Tradoria Standard 1 (Produktgalerie)
+
+*/
+
+/* HTML - Tags */
+
+body {
+   padding: 10px;
+   margin: 10px;
+   font-family: Arial, sans-serif;
+   font-size: 13px;
+   color: #FFFFFF;
+}
+
+h1 {
+   font-size: 21px;
+   display: inline;
+   color: {config.colors.headlines}; 
+}
+
+/* Links */
+
+a {
+   text-decoration: underline;
+   color: {config.page.font_color};
+}
+
+a:hover {
+   text-decoration: underline;
+   color: #CB7B4A;
+}
+
+/* Sonstiges */
+
+.box_img {
+   border: 1px solid #DDDDDD;
+   padding: 20px;
+}
+
+.hr_grey {
+   background: #DDDDDD;
+   width: 100%;
+   height: 5px;
+   margin-bottom: 7px;
+}
+
+.clear {
+   clear: left;
+}

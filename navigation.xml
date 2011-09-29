@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<navigation>
+  <menu id="main_menu">
+    <title>Hauptmenü</title>
+    <desc></desc>
+    <elem>
+      <title>Home</title>
+      <link></link>
+      <target></target>
+    </elem>
+    <elem>
+      <title>Im Angebot</title>
+      <link>reduziert</link>
+      <target></target>
+    </elem>
+    <elem>
+      <title>Neu bei uns</title>
+      <link>neu</link>
+      <target></target>
+    </elem>
+    <elem>
+      <title>Unsere Bestseller</title>
+      <link>bestseller</link>
+      <target></target>
+    </elem>
+  </menu>
+  <menu id="header_menu">
+    <title>Menü oben rechts</title>
+    <desc></desc>
+    <elem>
+      <title>Kontakt</title>
+      <link>kontakt</link>
+      <target></target>
+    </elem>
+    <elem delete="0">
+      <title>Kundenkonto</title>
+      <link>kundenkonto</link>
+      <target>_blank</target>
+    </elem>
+  </menu>
+  <menu id="footer_menu">
+    <title>Menü unten (rechtliche Informationen)</title>
+    <desc></desc>
+    <elem>
+      <title>Kontakt</title>
+      <link>kontakt</link>
+      <target></target>
+    </elem>
+    <elem delete="0">
+      <title>Impressum</title>
+      <link>s/impressum</link>
+      <target></target>
+    </elem>
+    <elem delete="0">
+      <title>AGB</title>
+      <link>s/agb</link>
+      <target></target>
+    </elem>
+    <elem delete="0">
+      <title>Datenschutz</title>
+      <link>s/datenschutz</link>
+      <target></target>
+    </elem>
+    <elem delete="0">
+      <title>Versand &amp;amp; Lieferung</title>
+      <link>s/versand</link>
+      <target></target>
+    </elem>
+    <elem delete="0">
+      <title>Gesetzliche Informationen</title>
+      <link>s/gesetzliche_informationen</link>
+      <target>_self</target>
+    </elem>
+  </menu>
+  <menu id="about_menu">
+    <title>Menü Über uns</title>
+    <desc></desc>
+    <elem>
+      <title>Herstellerverzeichnis</title>
+      <link>hersteller</link>
+      <target></target>
+    </elem>
+    <elem>
+      <title>So bewerten uns Kunden</title>
+      <link>bewertungen</link>
+      <target>_blank</target>
+    </elem>
+    <elem>
+      <title>Über uns</title>
+      <link>c/ueber_uns</link>
+      <target></target>
+    </elem>
+  </menu>
+  <menu id="special_menu">
+    <title>Menü Specials</title>
+    <desc></desc>
+  </menu>
+</navigation>
